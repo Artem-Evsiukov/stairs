@@ -4,7 +4,7 @@
     justify-content: flex-start;
     overflow-x: scroll;
     margin-bottom: 4rem;
-    @include media(">=phone"){
+    @include media(">=phone-lg"){
         justify-content: center;
     }
 
