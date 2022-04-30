@@ -1,9 +1,18 @@
 .intro-sections{
     background: linear-gradient(180deg, #C62127 0%, #FF490E 100%);
     border-radius: 0px 0px 24px 24px;
-    .intro{
-        &__wrap{
-
-        }
+    padding-top: 112px;
+}
+.intro{
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-title{
+        margin-bottom: 21px;
+    }
+    &__text{
+        color:$white;
     }
 }
