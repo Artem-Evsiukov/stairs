@@ -1,0 +1,11 @@
+.video-sections{
+    margin-top: 80px;
+    .section-title{
+        color: $black;
+    }
+}
+.video{
+    &__wrap{
+        display: block;
+    }
+}
