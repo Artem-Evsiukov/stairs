@@ -23,8 +23,8 @@ const swiperSlider = (() => {
       clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-video-button-prev',
-      prevEl: '.swiper-video-button-next',
+      nextEl: '.swiper-video-button-next',
+      prevEl: '.swiper-video-button-prev',
     },
     // breakpoints: {
     //   768: {

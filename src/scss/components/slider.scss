@@ -92,10 +92,10 @@
   width: 85px;
   border-radius: 45px;
   background-color: #3c3c3cbf;
-  position: absolute;
-  bottom: 504px;
+  // position: absolute;
+  // bottom: 504px;
   z-index: 1;
-  left: 69px;
+  // left: 69px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,6 +119,7 @@
     font-size: 27px;
   }
 }
+<<<<<<< HEAD
 .swiper-video-pagination {
   display: flex;
   flex-direction: row;
@@ -130,3 +131,21 @@
     }
   }
 }
+=======
+.swiper-video-pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    .swiper-pagination-bullet{
+        margin-right: 12px;
+        &:last-child{
+          margin-right: 0px;
+        }
+    }
+    .swiper-pagination-bullet-active{
+      background-color: $base-color;
+    }
+}
+>>>>>>> 4bd1102e84b962125047c554497113e9cea8aa19
