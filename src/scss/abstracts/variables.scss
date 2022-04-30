@@ -3,7 +3,7 @@ $breakpoints: (
   'phone-sm': 320px,
   'phone-md': 375px,
   'phone': 480px,
-  'phone-lg': 576px, 
+  'phone-lg': 576px,
   'tablet': 768px,
   'tablet-lg': 992px,
   'desktop': 1024px,
@@ -15,28 +15,27 @@ $breakpoints: (
 
 // Colors
 $black: #000000;
-$white: #FFFFFF;
-$border: #CCCCCC;
-$success: #28A745;
-$warning: #FFC117;
-$error: #DC3545;
-$bg-color:#F6F6F9;
+$white: #ffffff;
+$border: #cccccc;
+$success: #28a745;
+$warning: #ffc117;
+$error: #dc3545;
+$bg-color: #f6f6f9;
 
-// 
-$base-color:#FA4A0C;
-$secondary-color:#7B7B7D;
-$bulet-color:#C4C4C4;
-$production-color:#FF0000;
-$FEB:#C62127;
-$popup-bg:rgba(0, 0, 0, 0.3);
-$form-label:#848484;
-$name-color:#000080;
-$star:#F7C70A;
-$date:#999999;
-$review-text:#333333;
-$calculation:#51CB5F;
-$question:#1FA0E1;
-
+//
+$base-color: #fa4a0c;
+$secondary-color: #7b7b7d;
+$bulet-color: #c4c4c4;
+$production-color: #ff0000;
+$FEB: #c62127;
+$popup-bg: rgba(0, 0, 0, 0.3);
+$form-label: #848484;
+$name-color: #000080;
+$star: #f7c70a;
+$date: #999999;
+$review-text: #333333;
+$calculation: #51cb5f;
+$question: #1fa0e1;
 
 // Fonts
 $primary-font: 'Open Sans';
