@@ -16,9 +16,9 @@ var scrolled;
 window.onscroll = function () {
   scrolled = window.pageYOffset || document.documentElement.scrollTop;
   if (scrolled > 100) {
-    $('.menu').appendClass('.active');
+    $('.header').addClass('active');
   }
   if (100 > scrolled) {
-    $('.menu').css({ background: 'transparent' });
+    $('.header').removeClass('active');
   }
 };
