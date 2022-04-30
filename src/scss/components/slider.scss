@@ -119,19 +119,6 @@
     font-size: 27px;
   }
 }
-<<<<<<< HEAD
-.swiper-video-pagination {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  &-bullet {
-    margin-left: 12px;
-    &:last-child {
-      margin-left: 0px;
-    }
-  }
-}
-=======
 .swiper-video-pagination{
     display: flex;
     flex-direction: row;
@@ -148,4 +135,3 @@
       background-color: $base-color;
     }
 }
->>>>>>> 4bd1102e84b962125047c554497113e9cea8aa19
