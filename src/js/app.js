@@ -5,6 +5,7 @@
 import burgerMenu from './components/burger-menu';
 import tabs from './components/tabs';
 import swiperSlider from './components/slider';
+import popups from './components/popup';
 
 (($) => {
   // When DOM is ready
@@ -13,6 +14,7 @@ import swiperSlider from './components/slider';
     burgerMenu.init();
     tabs.init();
     swiperSlider.init();
+    popups.init();
   });
 })(jQuery);
 

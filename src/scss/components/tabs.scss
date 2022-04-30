@@ -4,22 +4,20 @@
     justify-content: flex-start;
     overflow-x: scroll;
     margin-bottom: 4rem;
-    @include media(">=phone-lg"){
-        justify-content: center;
+    @include media('>=phone-lg') {
+      justify-content: center;
     }
 
     &::-webkit-scrollbar {
-        width: 0;
-        background-color: transparent;
-      }
-  
-      &::-webkit-scrollbar-thumb {
-        background-color: transparent;
-        border-radius: 0;
-      }
-  }
+      width: 0;
+      background-color: transparent;
+    }
 
-  
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      border-radius: 0;
+    }
+  }
 
   &__btn {
     color: $secondary-color;
@@ -29,7 +27,7 @@
     cursor: pointer;
     white-space: nowrap;
     border-bottom: 3px solid transparent;
-    padding-bottom: .9rem;
+    padding-bottom: 0.9rem;
 
     &:hover {
     }
@@ -52,6 +50,8 @@
 
     &.active {
       display: block;
+
+      
     }
   }
 }
