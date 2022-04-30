@@ -5,10 +5,25 @@
     margin-bottom: 4rem;
   }
 
-  .types__img{
+  .types__img {
     min-height: 100%;
     display: flex;
   }
+  .base-text {
+    color: $base-color;
+    margin-bottom: 3.8rem;
+    display: block;
+    text-align: center;
+  }
 }
-
-
+.types-wrap {
+  margin-bottom: 4rem;
+}
+.types{
+    &__text{
+        color: $black !important;
+    }
+    .primary{
+        margin-bottom: 6rem;
+    }
+}

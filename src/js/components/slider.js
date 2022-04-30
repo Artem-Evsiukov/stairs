@@ -5,6 +5,8 @@ const swiperSlider = (() => {
     speed: 1000,
     autoplay: true,
     centerInsufficientSlides: false,
+    observer: true,
+    observeParents: true,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -18,6 +20,8 @@ const swiperSlider = (() => {
     speed: 1000,
     autoplay: true,
     centerInsufficientSlides: false,
+    observer: true,
+    observeParents: true,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -31,6 +35,8 @@ const swiperSlider = (() => {
     speed: 1000,
     autoplay: true,
     centerInsufficientSlides: false,
+    observer: true,
+    observeParents: true,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -44,6 +50,8 @@ const swiperSlider = (() => {
     speed: 1000,
     autoplay: true,
     centerInsufficientSlides: true,
+    observer: true,
+    observeParents: true,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
