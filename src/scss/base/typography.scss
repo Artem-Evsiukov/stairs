@@ -8,6 +8,9 @@
   max-width: 380px;
   color:$white;
   line-height: 1.38;
+  @include media("<=phone-md"){
+    font-size: 3.4rem;
+  }
 }
 
 .section-title {
@@ -17,6 +20,9 @@
   font-size: 4.2rem;
   text-align: center;
   text-transform: uppercase;
+  @include media("<=phone-md"){
+    font-size: 3.4rem;
+  }
 }
 
 .base-text {
@@ -24,8 +30,14 @@
   font-style: normal;
   font-weight: 400;
   font-size: 1.8rem;
-  line-height: 133%;
+  // line-height: 133%;
   text-align: center;
+  &.height133{    
+    line-height: 133%;
+  }
+  &.height167{    
+      line-height: 167%;
+  }
 }
 
 .typography {
