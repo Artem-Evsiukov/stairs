@@ -1,81 +1,96 @@
-const showPopupBtns = document.querySelectorAll('.js-show-popup');
-const popups = document.querySelectorAll('.js-popup');
-const body = document.body;
-const overlay = document.querySelector('.js-overlay');
+const POPUP_SHOW = document.querySelectorAll('.js-show-popup');
+const POPUPS = document.querySelectorAll('[data-popup]');
+const OVERLAY = document.querySelector('.js-overlay');
+const BODY = document.querySelector('body');
+const CLOSE_BTN = document.querySelectorAll('.js-popup-close');
 
 const CLASS_ACTIVE = 'active';
 const CLASS_OVERFLOW = 'overflow';
 
-const popupsFunc = (() => {
-  const showPopup = (event) => {
-    const openBtn = event.target.closest('.js-show-popup');
-    const activePopup = document.querySelector('.js-popup.active');
-    const targetPopup = document.querySelector(`[data-popup=${openBtn.dataset.trigger}]`);
+const popups = (() => {
+  if (!POPUPS.length) return;
 
-    if (activePopup) {
-      activePopup.classList.remove(CLASS_ACTIVE);
-    }
+  function fadeOut(el, changeOpasity = -0.8) {
+    if (!el) return;
 
-    if (openBtn.dataset.tab) {
-      targetPopup.querySelector(`[data-tab="${openBtn.dataset.tab}"]`).classList.add(CLASS_ACTIVE);
-      targetPopup.querySelector(`[data-content="${openBtn.dataset.tab}"]`).classList.add(CLASS_ACTIVE);
-    }
+    requestAnimationFrame(function anim() {
+      const opacity = +window.getComputedStyle(el).opacity;
+      if (opacity <= 0) {
+        el.style.opacity = 0;
+        el.style.display = 'none';
+        el.classList.remove(CLASS_ACTIVE);
+        return;
+      }
 
-    targetPopup.classList.add(CLASS_ACTIVE);
-    body.classList.add(CLASS_OVERFLOW);
-    overlay.classList.add(CLASS_ACTIVE);
+      el.style.opacity = opacity + changeOpasity;
+
+      if (opacity > 0) requestAnimationFrame(anim);
+    });
+  }
+
+  function fadeIn(el, changeOpasity = 0.8) {
+    if (!el) return;
+
+    el.style.display = 'block';
+    el.classList.add(CLASS_ACTIVE);
+
+    requestAnimationFrame(function anim() {
+      const opacity = +window.getComputedStyle(el).opacity;
+      if (opacity >= 1) {
+        el.style.opacity = 1;
+        return;
+      }
+      el.style.opacity = opacity + changeOpasity;
+      if (opacity < 1) requestAnimationFrame(anim);
+    });
+  }
+
+  const hidePopup = () => {
+    fadeOut(OVERLAY);
+    BODY.classList.remove(CLASS_OVERFLOW);
+    POPUPS.forEach((popup) => fadeOut(popup));
   };
 
-  const hidePopup = (activePopup) => {
-    if (!activePopup) {
-      return;
-    }
-    body.classList.remove(CLASS_OVERFLOW);
-    overlay.classList.remove(CLASS_ACTIVE);
-    activePopup.classList.remove(CLASS_ACTIVE);
-
-    if (document.querySelector('.active[data-content]') && document.querySelector('.active[data-tab]')) {
-      document.querySelector('.active[data-content]').classList.remove(CLASS_ACTIVE);
-      document.querySelector('.active[data-tab]').classList.remove(CLASS_ACTIVE);
-    }
+  const showPopup = (target) => {
+    fadeIn(OVERLAY);
+    BODY.classList.add(CLASS_OVERFLOW);
+    const currentPopup = document.querySelector(`[data-popup="${target}"]`);
+    fadeIn(currentPopup);
   };
 
   const showPopupInit = () => {
-    if (showPopupBtns.length) {
-      showPopupBtns.forEach((opener) => {
-        opener.addEventListener('click', (event) => {
-          showPopup(event);
+    if (POPUP_SHOW.length) {
+      POPUP_SHOW.forEach((opener) => {
+        opener.addEventListener('click', function () {
+          showPopup(this.dataset.trigger);
         });
       });
     }
 
-    if (overlay) {
-      overlay.addEventListener('click', () => {
-        hidePopup(document.querySelector('.js-popup.active'));
+    if (OVERLAY) {
+      OVERLAY.addEventListener('click', () => {
+        hidePopup();
       });
     }
-    if (popups.length) {
-      popups.forEach((popup) => {
-        popup.addEventListener('click', (event) => {
-          const closeBtn = event.target.closest('.js-popup-close');
-          if (!closeBtn) {
-            return;
-          }
-          hidePopup(popup);
+    if (CLOSE_BTN.length) {
+      CLOSE_BTN.forEach((closure) => {
+        closure.addEventListener('click', () => {
+          hidePopup();
         });
       });
     }
   };
 
   const init = () => {
-    if (popups.length) {
+    if (POPUPS.length) {
       showPopupInit();
     }
   };
 
   return {
     init,
+    showPopup,
   };
 })();
 
-export default popupsFunc;
+export default popups;
