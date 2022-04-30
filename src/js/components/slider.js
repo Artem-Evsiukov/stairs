@@ -12,7 +12,7 @@ const swiperSlider = (() => {
   });
 
   const videoSwiper = new Swiper('.js-video-slider', {
-    // slidesPerView: 2,
+    slidesPerView: 1,
     // spaceBetween: 20,
 
     // speed: 800,

@@ -8,11 +8,26 @@
 .video{
     &__wrap{
         position: relative;
+        overflow-x: hidden;
+        video{
+            width: 380px !important;
+            height: 671px !important;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+        .plyr--video{
+            border-radius: 25px;
+        }
+        .swiper-slide{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .swiper-video-button-prev{
 
         }
         .swiper-video-button-next{
-            
+
         }
     }   
     
