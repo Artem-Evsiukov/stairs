@@ -1,17 +1,22 @@
 .header {
   padding: 4rem 0;
   background: transparent;
+  position: absolute;
+  width: 100%;
   &__wrap {
     @extend %d-flex-center-between;
   }
+
+  &.active {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 101;
+    transition: $base-transition;
+    background: linear-gradient(180deg, #C62127 0%, #FF490E 100%);
+  }
 }
-.menu {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 101;
-  transition: $base-transition;
-}
+
 
 .nav {
   margin: 0 auto;

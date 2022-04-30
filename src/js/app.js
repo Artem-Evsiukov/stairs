@@ -11,3 +11,14 @@ import burgerMenu from './components/burger-menu';
     burgerMenu.init();
   });
 })(jQuery);
+
+var scrolled;
+window.onscroll = function () {
+  scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrolled > 100) {
+    $('.header').addClass('active');
+  }
+  if (100 > scrolled) {
+    $('.header').removeClass('active');
+  }
+};
