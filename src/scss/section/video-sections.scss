@@ -2,10 +2,11 @@
     margin-top: 80px;
     .section-title{
         color: $black;
+        line-height: 1.33;
     }
 }
 .video{
     &__wrap{
-        display: block;
+        margin-top: 26px;
     }   
 }
