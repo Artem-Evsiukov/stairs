@@ -13,10 +13,6 @@ const swiperSlider = (() => {
 
   const videoSwiper = new Swiper('.js-video-slider', {
     slidesPerView: 1,
-    // spaceBetween: 20,
-
-    // speed: 800,
-    // centerInsufficientSlides: true,
     pagination: {
       el: '.swiper-video-pagination',
       type: 'bullets',
@@ -26,12 +22,6 @@ const swiperSlider = (() => {
       nextEl: '.swiper-video-button-next',
       prevEl: '.swiper-video-button-prev',
     },
-    // breakpoints: {
-    //   768: {
-    //     spaceBetween: 40,
-    //     slidesPerView: 3,
-    //   },
-    // },
   });
 
   const init = () => {};
