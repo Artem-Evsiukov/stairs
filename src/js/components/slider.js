@@ -17,6 +17,29 @@ const swiperSlider = (() => {
     },
   });
 
+  const videoSwiper = new Swiper('.js-video-slider', {
+    // slidesPerView: 2,
+    // spaceBetween: 20,
+
+    // speed: 800,
+    // centerInsufficientSlides: true,
+    pagination: {
+      el: '.swiper-video-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-video-button-prev',
+      prevEl: '.swiper-video-button-next',
+    },
+    // breakpoints: {
+    //   768: {
+    //     spaceBetween: 40,
+    //     slidesPerView: 3,
+    //   },
+    // },
+  });
+
   const init = () => {};
 
   return {
