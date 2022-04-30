@@ -1,18 +1,28 @@
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: $white;
+  border-radius: 24px;
+  width: 100%;
+  
+  &.primary {
+    max-width: 33.2rem;
+    height: 7rem;
+    background-color: $base-color;
+  }
 
-	&.primary {
+  &.secondary {
+    max-width: 38rem;
+    background-color: $white;
+    color: $base-color;
+  }
 
-	}
+  &.tertiary {
+  }
 
-	&.secondary {
-		
-	}
-
-	&.tertiary {
-		
-	}
-
-	&.disabled {
-		
-	}
+  &.disabled {
+  }
 }
