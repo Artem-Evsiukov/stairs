@@ -1,6 +1,6 @@
 const swiperSlider = (() => {
   const tabSwiper = new Swiper('.js-tab-slider', {
-    slidesPerView: 2,
+    slidesPerView: 1.5,
     spaceBetween: 20,
     speed: 800,
     centerInsufficientSlides: true,
@@ -8,12 +8,6 @@ const swiperSlider = (() => {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true,
-    },
-    breakpoints: {
-      768: {
-        spaceBetween: 40,
-        slidesPerView: 3,
-      },
     },
   });
 
@@ -45,7 +39,6 @@ const swiperSlider = (() => {
   return {
     init,
   };
-
 })();
 
 export default swiperSlider;
