@@ -19,6 +19,13 @@
     max-width: 38rem;
     background-color: $white;
     color: $base-color;
+    padding: 25px 38px;
+    @include media("<=phone"){
+      max-width: 100%;
+      width: 100%;
+      font-size: 1.4rem;
+      padding: 22px 18px;
+    }
   }
 
   &.tertiary {

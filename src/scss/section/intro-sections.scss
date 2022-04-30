@@ -2,6 +2,7 @@
     background: linear-gradient(180deg, #C62127 0%, #FF490E 100%);
     border-radius: 0px 0px 24px 24px;
     padding-top: 112px;
+    padding-bottom: 40px;
     overflow-x: hidden;
 }
 .intro{
@@ -15,10 +16,21 @@
     }
     &__text{
         color:$white;
+        z-index: 1;
+        
     }
     &__img{
         width: 603px;
         margin-top: -81px;
-
+        margin-bottom: -103px;
+        position: relative;
+        z-index: 0;
+    }
+    &__btn{
+        z-index: 1;
+        margin-top: 28px;
+        @include media("<=phone"){
+            width: 100%;
+        }
     }
 }
