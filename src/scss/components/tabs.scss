@@ -1,34 +1,48 @@
 .tabs {
   &__header {
     display: flex;
+    overflow-x: scroll;
+    margin-bottom: 4rem;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        background-color: transparent;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 0;
+      }
   }
 
+  
+
   &__btn {
-    color: #000;
+    color: $secondary-color;
     padding: 4px;
-    border: 1px solid #ccc;
-    border-bottom: none;
     transition: $base-transition;
-    font-size: 20px;
+    font-size: 1.8rem;
     cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 32px solid transparent;
 
     &:hover {
-      background-color: #ccc;
     }
 
     & + & {
-      margin-left: 10px;
+      margin-left: 2.4rem;
     }
 
     &.active {
-      background-color: #ccc;
+      color: $base-color;
+      border-bottom: 3px solid $base-color;
+      border-radius: 2px;
     }
   }
 
   &__content {
     display: none;
     padding: 16px;
-    border: 1px solid #ccc;
     font-size: 16px;
 
     &.active {
