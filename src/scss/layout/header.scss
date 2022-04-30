@@ -1,11 +1,16 @@
 .header {
-  position: fixed;
-  width: 100%;
-  padding: 4rem 0 ;
-  background-image: linear-gradient(180deg, #c62127 0%, #ff490e 100%);
+  padding: 4rem 0;
+  background: transparent;
   &__wrap {
     @extend %d-flex-center-between;
   }
+}
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 101;
+  transition: $base-transition;
 }
 
 .nav {
