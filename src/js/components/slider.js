@@ -11,6 +11,44 @@ const swiperSlider = (() => {
     },
   });
 
+  const tabSwiperTwo = new Swiper('.js-tab-sliderTwo', {
+    slidesPerView: 1.5,
+    spaceBetween: 20,
+    speed: 800,
+    centerInsufficientSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+  });
+
+  const tabSwiperThree = new Swiper('.js-tab-sliderThree', {
+    slidesPerView: 1.5,
+    spaceBetween: 20,
+    speed: 800,
+    centerInsufficientSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+  });
+
+  const tabSwiperFour = new Swiper('.js-tab-sliderFour', {
+    slidesPerView: 1.5,
+    spaceBetween: 20,
+    speed: 800,
+    centerInsufficientSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+  });
+
+  /////
+
   const videoSwiper = new Swiper('.js-video-slider', {
     slidesPerView: 1,
     // spaceBetween: 20,

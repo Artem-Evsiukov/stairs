@@ -1,20 +1,15 @@
 .overlay {
-  //opacity: 0;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 9;
-  //z-index: -1;
   background-color: $popup-bg;
   transition: opacity 0.5s ease;
   display: none;
   &.active {
     display: flex !important;
-    /*  z-index: 9;
-    opacity: 1;
-    transition: opacity 0.5s ease; */
   }
 }
 .popup {
@@ -22,12 +17,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -45%);
-  //z-index: -3;
   z-index: 99;
   padding: 0 1.5rem;
   width: 100%;
   max-width: 320px;
-  //opacity: 0;
   transition: opacity 0.5s ease;
   display: none;
 
@@ -37,9 +30,7 @@
 
   &.active {
     display: block;
-    //opacity: 1;
     z-index: 99;
-    //transform: translate(-50%, -45%);
     transition: opacity 0.5s ease;
   }
   &__wrap {
@@ -77,6 +68,83 @@
     }
     &:after {
       transform: rotate(-45deg);
+    }
+  }
+
+
+
+  .slide {
+    width: 100%;
+    height: auto;
+    display: grid;
+    overflow: hidden;
+    border-radius: 2.4rem;
+  }
+  
+  .slide-items {
+    position: relative;
+    grid-area: 1/1;
+   min-height: 55rem;
+    overflow: hidden;
+  }
+  
+  .slide-nav {
+    grid-area: 1/1;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  
+  .slide-nav button {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+  }
+  
+  .slide-items > * {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .slide-items > .active {
+    position: relative;
+    opacity: 1;
+    pointer-events: initial;
+    height: 100%;
+  }
+  
+  .slide-thumb {
+    display: flex;
+    grid-column: 1 / 3;
+    padding: 3.2rem 2.8rem;
+  }
+  
+  .slide-thumb > span {
+    flex: 1;
+    display: block;
+    height: 3px;
+    background: #c4c4c4;
+    margin: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  
+  .slide-thumb > span.active::after {
+    content: '';
+    display: block;
+    height: inherit;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+    transform: translateX(-100%);
+    animation: thumb 5s forwards linear;
+  }
+  
+  @keyframes thumb {
+    to {
+      transform: initial;
     }
   }
 }
