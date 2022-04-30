@@ -14,6 +14,16 @@
             height: 671px !important;
             object-fit: cover;
             border-radius: 25px;
+            @include media("<=phone-lg"){
+                width: 88.786vw !important;
+                max-width: 380px !important;
+                height: 156.776vw !important;
+                max-height: 671px !important;
+            }
+            @include media("<=phone-md"){
+                width: 272px !important;
+                height: 481px !important;
+            }
         }
         .plyr--video{
             border-radius: 25px;
@@ -26,14 +36,32 @@
         .swiper-video-button-prev{
             position: absolute;
             bottom: 292px;
-            left: 21px;
             z-index: 1;
+            right: calc(50% + 104px);
+            @include media("<=phone-lg"){
+                top: calc(60px + 50%);
+                transform: translate(0,-80%);
+                left: 0;
+                right: auto;
+            }
+            @include media("<=phone-md"){
+                bottom:198px;
+            }
         }
         .swiper-video-button-next{
             z-index: 1;
             position: absolute;
             bottom: 292px;
-            right: 21px;
+            left: calc(50% + 104px);
+            @include media("<=phone-lg"){
+                top: calc(60px + 50%);
+                transform: translate(0,-80%);
+                left: auto;
+                right: 0;
+            }
+            @include media("<=phone-md"){
+                bottom:198px;
+            }
         }
         video::-webkit-media-controls-start-playback-button {
             display: none!important;
@@ -55,7 +83,7 @@
         flex-direction: row;
         justify-content: center;
         .primary{
-            max-width: 100%;
+            // max-width: 100%;
         }
     }
     &__text-after{

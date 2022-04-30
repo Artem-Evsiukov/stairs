@@ -20,9 +20,9 @@
   font-size: 3.2rem;
   text-align: center;
   text-transform: uppercase;
-  // @include media("<=phone-md"){
-  //   font-size: 3.4rem;
-  // }
+  @include media("<=phone-md"){
+    font-size: 2.9rem;
+  }
 }
 
 .base-text {

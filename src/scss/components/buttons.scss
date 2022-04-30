@@ -10,8 +10,14 @@
 
   
   &.primary {
+    max-width: 38rem;
     height: 7rem;
     background-color: $base-color;
+    margin-left: auto;
+    margin-right: auto;
+    @include media("<=phone"){
+      max-width: 100%;
+    }
   }
 
   &.secondary {
