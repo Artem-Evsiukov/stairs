@@ -1,13 +1,28 @@
 .main-title {
-  font-size: 3rem;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.2rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .section-title {
-  font-size: 2rem;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.2rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .base-text {
-  font-size: 1.6rem;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 133%;
+  text-align: center;
 }
 
 .typography {
