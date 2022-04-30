@@ -1,8 +1,12 @@
 .tabs {
   &__header {
     display: flex;
+    justify-content: flex-start;
     overflow-x: scroll;
     margin-bottom: 4rem;
+    @include media(">=phone"){
+        justify-content: center;
+    }
 
     &::-webkit-scrollbar {
         width: 0;
@@ -24,7 +28,8 @@
     font-size: 1.8rem;
     cursor: pointer;
     white-space: nowrap;
-    border-bottom: 32px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding-bottom: .9rem;
 
     &:hover {
     }
