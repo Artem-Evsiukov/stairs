@@ -2,8 +2,9 @@ const swiperSlider = (() => {
   const tabSwiper = new Swiper('.js-tab-slider', {
     slidesPerView: 1.5,
     spaceBetween: 20,
-    speed: 800,
-    centerInsufficientSlides: true,
+    speed: 1000,
+    autoplay: true,
+    centerInsufficientSlides: false,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -14,8 +15,9 @@ const swiperSlider = (() => {
   const tabSwiperTwo = new Swiper('.js-tab-sliderTwo', {
     slidesPerView: 1.5,
     spaceBetween: 20,
-    speed: 800,
-    centerInsufficientSlides: true,
+    speed: 1000,
+    autoplay: true,
+    centerInsufficientSlides: false,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -26,8 +28,9 @@ const swiperSlider = (() => {
   const tabSwiperThree = new Swiper('.js-tab-sliderThree', {
     slidesPerView: 1.5,
     spaceBetween: 20,
-    speed: 800,
-    centerInsufficientSlides: true,
+    speed: 1000,
+    autoplay: true,
+    centerInsufficientSlides: false,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -38,7 +41,8 @@ const swiperSlider = (() => {
   const tabSwiperFour = new Swiper('.js-tab-sliderFour', {
     slidesPerView: 1.5,
     spaceBetween: 20,
-    speed: 800,
+    speed: 1000,
+    autoplay: true,
     centerInsufficientSlides: true,
     pagination: {
       el: '.swiper-pagination',
