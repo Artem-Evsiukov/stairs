@@ -101,13 +101,13 @@
     height: 3rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     @include media('>=phone') {
       width: 4.5rem;
       height: 4.5rem;
     }
 
     svg {
-      width: 100%;
       display: block;
     }
   }
