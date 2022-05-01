@@ -72,6 +72,9 @@
         font-family: $secondary-font;
         font-weight: 300;
         font-size: 1.8rem;
+        @include media("<=phone-md"){
+            font-size: 1.5rem;
+        }
         line-height: 1.2;
         text-align: center;
         margin-top: 40px;
@@ -82,9 +85,6 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        .primary{
-            // max-width: 100%;
-        }
     }
     &__text-after{
         text-align: center;
@@ -96,6 +96,9 @@
         p:first-child{
             font-weight: 400;
             font-size: 1.8rem;
+            @include media("<=phone-md"){
+                font-size: 1.5rem;
+            }
             line-height: 1.61;
             span{
                 color:$black;
@@ -106,6 +109,9 @@
             color: $base-color;
             font-weight: 700;
             font-size: 1.8rem;
+            @include media("<=phone-md"){
+                font-size: 1.5rem;
+            }
         }
         .between{
             display: block;

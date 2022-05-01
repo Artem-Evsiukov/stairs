@@ -113,3 +113,20 @@
     background-color: $base-color;
   }
 }
+
+.swiper-withdrawable-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  .swiper-pagination-bullet {
+    margin-right: 12px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $base-color;
+  }
+}

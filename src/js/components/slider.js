@@ -74,6 +74,23 @@ const swiperSlider = (() => {
     },
   });
 
+  /////
+
+  const withdrawableSwiper = new Swiper('.js-withdrawable-slider', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    centerInsufficientSlides: true,
+    pagination: {
+      el: '.swiper-withdrawable-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    // navigation: {
+    //   nextEl: '.swiper-video-button-next',
+    //   prevEl: '.swiper-video-button-prev',
+    // },
+  });
+
   const init = () => {};
 
   return {
