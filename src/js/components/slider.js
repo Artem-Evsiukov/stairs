@@ -90,6 +90,25 @@ const swiperSlider = (() => {
     //   prevEl: '.swiper-video-button-prev',
     // },
   });
+  const reviewsSwiper = new Swiper('.js-reviews-slider', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    centerInsufficientSlides: true,
+    pagination: {
+      el: '.swiper-reviews-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    // navigation: {
+    //   nextEl: '.swiper-video-button-next',
+    //   prevEl: '.swiper-video-button-prev',
+    // },
+  });
+  const reviewsImagesSwiper = new Swiper('.js-reviews-images-slider', {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    centerInsufficientSlides: true,
+  });
 
   const init = () => {};
 
