@@ -5,6 +5,9 @@
     .section-title{
         padding: 0 12px;
         line-height: 1.34;
+        @include media("<=phone-md"){
+            padding: 0;
+        }
     }
     &__wrap{
         overflow-x: hidden;
