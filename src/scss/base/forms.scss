@@ -19,9 +19,9 @@ textarea {
   outline: none;
   appearance: none;
   box-sizing: border-box;
-  border: 1px solid $border;
+  border: none;
   font-family: $primary-font;
-  padding: 1rem 1.5rem;
+  padding: 0 1.5rem .9rem 0;
 
   &::placeholder {
     transition: $base-transition;

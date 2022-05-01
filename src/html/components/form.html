@@ -1,43 +1,56 @@
-<form class="form" id="form-contact" method="POST" action="#" name="form-contact" novalidate>
-  <div class="form__body">
-    <select class="select js-select" name="select" id="selekt-ui">
-      <option value="1">Опция 1</option>
-      <option value="2">Опция 2</option>
-      <option value="3">Опция 3</option>
-    </select>
-    <div class="form__group">
-      <label class="form__name" for="email">Your Email Address</label>
-      <input class="form__input" type="email" name="email-ui" id="email-ui" placeholder="something@website.com"
-        data-mask="email" required>
-      <span class="form__error-text"></span>
-    </div>
-    <div class="form__group">
-      <label class="form__name" for="email">Your Phone</label>
-      <input class="form__input" type="text" name="phone-ui" id="phone-ui" placeholder="+7 (___) ___-__-__"
-        data-mask="tel" pattern="^(\\s*)?(\\+)?([- _():=+]?(\\s*)?(\\s*)?\\d[- _():=+]?(\\s*)){11,50}(\\s*)?$" required>
-      <span class="form__error-text"></span>
-    </div>
-    <div class="form__group">
-      <label class="form__name" for="email">Your Date</label>
-      <input class="form__input" type="text" name="date-ui" id="date-ui" placeholder="14.05.2021" data-mask="date"
-        pattern="^(\\s*)?(\\+)?([- _():=+]?(\\s*)?(\\s*)?\\d[- _():=+]?(\\s*)){11,50}(\\s*)?$" required>
-      <span class="form__error-text"></span>
-    </div>
-    <div class="form__group">
-      <label class="form__name" for="subject">Subject</label>
-      <input class="form__input" type="text" name="subject" id="subject" placeholder="Question about your article">
-      <span class="form__error-text"></span>
-    </div>
-    <div class="form__group">
-      <label class="form__name" for="message">Message</label>
-      <textarea class="form__input" name="message" id="message" cols="30" rows="7"
-        placeholder="Your message starts with…"></textarea>
-      <span class="form__error-text"></span>
-    </div>
-    <div class="form__group hidden">
-      <input type="hidden" name="title" value="CONTACT">
-    </div>
-    <button type="submit" class="btn primary">Send a Message</button>
+<form class="form" id="form-contact" method="POST">
+    <div class="form__wrap">
+        <div class="form__head">
+            <h2 class="section-title">Оставь контакт </h2>
+            <p class="base-text color-base"> получишь ссылку</p>
+            <p class="base-text color-base"> на свою лестницу</p>
+            <iframe
+                src="https://projekteprofi.sema-server.com/webviewer/index.html?model=DF562B43-290A-4956-A6E0-9B4E19282020#ru"></iframe>
+        </div>
+        <div class="form__body">
+            <div class="form__group">
+                <label class="form__name" for="name">Андрей Владимирович</label>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Ваше имя и Фамилия" required>
+                <span class="form__error-text"></span>
+            </div>
+            <div class="form__group">
+                <label class="form__name" for="email">Ваш номер телефона</label>
+                <input class="form__input" type="text" name="phone-ui" id="phone-ui" placeholder="+7 (___) ___-__-__"
+                    data-mask="tel" required>
+                <span class="form__error-text"></span>
+            </div>
+            <div class="form__group form__group--check ">
+                <div class="form__checkbox">
+                    <input id="1" type="checkbox" name="1" class="form__checkbox-input">
+                    <label for="1" class="form__checkbox-label">
+                        <span class="form__icon">
+                            @@include('../svg-icon/tg.html')
+                        </span>
+                    </label>
+                </div>
+                <div class="form__checkbox">
+                    <input id="2" type="checkbox" name="2" class="form__checkbox-input">
+                    <label for="2" class="form__checkbox-label">
+                        <span class="form__icon">
+                            @@include('../svg-icon/wt.html')
+                        </span>
+                    </label>
+                </div>
+                <div class="form__checkbox">
+                    <input id="3" type="checkbox" name="3" class="form__checkbox-input">
+                    <label for="3" class="form__checkbox-label">
+                        <span class="form__icon">
+                            @@include('../svg-icon/vb.html')
+                        </span>
+                    </label>
+                </div>
 
-  </div>
+
+
+
+            </div>
+            <span class="form__text">Удобней связь через мессенджер?</span>
+            <button type="submit" class="btn primary">Получить ссылку</button>
+        </div>
+    </div>
 </form>
