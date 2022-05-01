@@ -1,41 +1,25 @@
 <div class="accordion-wrap js-accordion-wrap" data-only="true">
     <div class="accordion js-accordion">
         <div class="accordion__head js-accordion-head">
-            <p class="accordion__title">Предлагаем пройти экскурсию по нашему производству и убедиться в преимуществе использования станков с ЧПУ. Автоматизированное производство выводит на новый уровень качество изделий. </p>
+            <p class="accordion__title base-text">Предлагаем пройти экскурсию по нашему производству и убедиться в
+                преимуществе использования станков с ЧПУ. Автоматизированное производство выводит на новый уровень
+                качество изделий. </p>
             <button class="accordion__btn js-accordion-open">
-                <svg class="icon">
-                    <use xlink:href="#arrow-down"></use>
-                </svg>
+                <span class="accordion__icon">
+                    @@include('../svg-icon/arrow.html')
+                </span>
             </button>
         </div>
         <div class="accordion__content js-accordion-content">
             <div class="accordion__descr js-accordion-descr">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eius non suscipit aliquam eveniet
-                    architecto
-                    nihil, aut placeat
-                    explicabo hic debitis saepe vitae nobis sit expedita, laborum eum tempore, nemo praesentium
-                    perferendis
-                    incidunt. Aliquid voluptates
-                    blanditiis quam ex laborum eius, tempora, eaque labore ratione deserunt accusantium, quidem est iste
-                    commodi
-                    vero facere debitis
-                    corporis! Blanditiis ex dicta maxime quaerat architecto amet itaque est fuga praesentium quia rerum
-                    vel
-                    facilis
-                    consectetur, nisi,
-                    voluptate quas id! Soluta delectus praesentium reprehenderit suscipit id ipsam fugit temporibus,
-                    mollitia quia
-                    facilis laborum quo,
-                    consectetur molestias minima? Ab, similique. Dolorem rem ut pariatur ea deserunt, sunt nisi officia
-                    atque ab
-                    nemo optio aut
-                    temporibus sit minima odio nulla dolorum voluptas, ratione suscipit nam voluptatum iure veritatis.
-                    Beatae
-                    recusandae eveniet
-                    mollitia eos error, doloremque veniam nemo corporis cupiditate, magni dicta ipsam veritatis
-                    obcaecati dolor
-                </p>
+                <div class="accordion__wrap">
+                    <div id="playerOne"></div>
+
+                    <script>
+                        var player = new Playerjs({ id: "playerOne", file: "../assets/video/video-block1.mp4", poster: "assets/images/1.jpg" });
+                    </script>
+
+                </div>
             </div>
         </div>
     </div>
