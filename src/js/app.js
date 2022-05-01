@@ -6,12 +6,12 @@ import burgerMenu from './components/burger-menu';
 import tabs from './components/tabs';
 import swiperSlider from './components/slider';
 import popups from './components/popup';
-// import inputmask from './components/inputMask';
+import Accordion from './components/accordion';
 
 (($) => {
   // When DOM is ready
   $(() => {
-    //const accordions = new Accordion();
+    const accordions = new Accordion();
     burgerMenu.init();
     tabs.init();
     swiperSlider.init();
