@@ -8,9 +8,6 @@
         border-radius: 24px;
     }
     &__img{
-        max-width: 356px;
-        margin: 0 auto;
-        margin-top: 25px;
         img{
             width: 100%;
             display: block;
@@ -30,16 +27,20 @@
             line-height: 1.4;
             text-align: center;
             text-transform: uppercase;
+            margin-top: 38px;
+            margin-bottom: 39px;
             span{
                 color:$base-color;
             }
         }
         .form{
             padding-top: 0;
+            padding-bottom: 0;
             &__wrap{
                 box-shadow: none;
                 border-radius:none;
-                padding-bottom: 0;
+                padding-top: 0;
+                // padding-bottom: 0;
             }
         }
     }
