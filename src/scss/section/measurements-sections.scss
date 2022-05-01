@@ -1,0 +1,45 @@
+.measurements-sections{
+    margin-top: 80px;
+}
+.measurements{
+    &__wrap{
+        padding-top: 32px;
+        background: #FFFFFF;
+        box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
+        border-radius: 24px;
+    }
+    .section-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.37;
+        span{
+            color:$base-color;
+        }
+    }
+    &__img{
+        width: 272px;
+        margin: 0 auto;
+        margin-top: 41px;
+        margin-bottom: 46px;
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    &__text{
+        padding-left: 24px;
+        padding-right: 24px;
+        line-height: 1.646;
+        @include media("<=phone-md"){
+            font-size: 1.5rem;
+        }
+    }
+    &__button{
+        max-width: 17rem;
+        margin: 0 auto;
+        transform: translate(0,50%);
+        margin-top: -14px;
+    }
+}
+
