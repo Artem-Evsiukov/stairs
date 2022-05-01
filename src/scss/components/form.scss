@@ -108,6 +108,8 @@
     }
 
     svg {
+      width: 100%;
+      height: 100%;
       display: block;
     }
   }
@@ -154,10 +156,10 @@
     border-radius: 50%;
   }
 
-  .mb-45{
-      margin-bottom: 4.5rem;
+  .mb-45 {
+    margin-bottom: 4.5rem;
   }
-  .mb-94{
-      margin-bottom: 9.4rem;
+  .mb-94 {
+    margin-bottom: 9.4rem;
   }
 }
