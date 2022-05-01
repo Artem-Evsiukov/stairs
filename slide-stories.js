@@ -62,4 +62,3 @@ new SlideStories('slide');
 new SlideStories('slideTwo');
 new SlideStories('slideThree');
 new SlideStories('slideForth');
-new SlideStories('play');

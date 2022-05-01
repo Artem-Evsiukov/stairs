@@ -1,8 +1,14 @@
-.production-sections {
+.production-sections,
+.software-sections {
   padding: 6.5rem 0 0;
 
   .section-title {
     margin-bottom: 4.5rem;
+  }
+}
+.software-sections {
+  .section-title {
+    margin-bottom: 3.7rem;
   }
 }
 
@@ -27,7 +33,12 @@
       display: block;
     }
   }
-
+  &__images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5.2rem;
+  }
   &__text {
     display: block;
     font-weight: 700;
@@ -36,16 +47,5 @@
     text-transform: uppercase;
     margin-bottom: 5.2rem;
     color: $production-color;
-  }
-
-  .primary {
-    font-weight: 700;
-    font-size: 3.2rem;
-    max-width: 20rem;
-    width: 100%;
-    height: 8rem;
-    border-radius: 4rem;
-    padding: 2.5rem 3.1rem;
-    margin-bottom: 0.9rem;
   }
 }
