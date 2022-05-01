@@ -85,6 +85,116 @@
 <div class="popup popup--form" data-popup="form__one-popup">
     <!-- <button type="button" class="popup__close js-popup-close"></button> -->
     <div class="popup__wrap">
-        @@include('../components/form.html')
+        <form class="form" id="form-contact" method="POST">
+            <div class="form__wrap">
+                <div class="form__head">
+                    <h2 class="section-title">Оставь контакт </h2>
+                    <p class="base-text color-base"> получишь ссылку</p>
+                    <p class="base-text color-base"> на свою лестницу</p>
+                    <iframe
+                        src="https://projekteprofi.sema-server.com/webviewer/index.html?model=DF562B43-290A-4956-A6E0-9B4E19282020#ru"></iframe>
+                </div>
+                <div class="form__body">
+                    <div class="form__group">
+                        <label class="form__name" for="name">Андрей Владимирович</label>
+                        <input class="form__input" type="text" name="name" id="name" placeholder="Ваше имя и Фамилия"
+                            required>
+                        <span class="form__error-text"></span>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__name" for="email">Ваш номер телефона</label>
+                        <input class="form__input" type="text" name="phone-ui" id="phone-ui"
+                            placeholder="+7 (___) ___-__-__" data-mask="tel" required>
+                        <span class="form__error-text"></span>
+                    </div>
+                    <div class="form__group form__group--check ">
+                        <div class="form__checkbox">
+                            <input id="1" type="checkbox" name="1" class="form__checkbox-input">
+                            <label for="1" class="form__checkbox-label">
+                                <span class="form__icon bg-blue">
+                                    @@include('../svg-icon/tg.html')
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form__checkbox">
+                            <input id="2" type="checkbox" name="2" class="form__checkbox-input">
+                            <label for="2" class="form__checkbox-label">
+                                <span class="form__icon ">
+                                    @@include('../svg-icon/wt.html')
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form__checkbox">
+                            <input id="3" type="checkbox" name="3" class="form__checkbox-input">
+                            <label for="3" class="form__checkbox-label">
+                                <span class="form__icon ">
+                                    @@include('../svg-icon/vb.html')
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <span class="form__text">Удобней связь через мессенджер?</span>
+                    <button type="submit" class="btn primary">Получить ссылку</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="popup  popup--form" data-popup="form__two-popup">
+    <div class="popup__wrap">
+        <form class="form" id="form-contact2" method="POST">
+            <div class="form__wrap">
+                <div class="form__head">
+                    <h2 class="section-title">Получить каталог </h2>
+                    <div class="form__img">
+                        <img src="assets/images/cat.png" alt="">
+                    </div>
+                </div>
+                <div class="form__body">
+                    <div class="form__group">
+                        <label class="form__name" for="name">Андрей Владимирович</label>
+                        <input class="form__input" type="text" name="name" id="name" placeholder="Ваше имя и Фамилия"
+                            required>
+                        <span class="form__error-text"></span>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__name" for="email">Ваш номер телефона</label>
+                        <input class="form__input" type="text" name="phone-ui" id="phone-ui"
+                            placeholder="+7 (___) ___-__-__" data-mask="tel" required>
+                        <span class="form__error-text"></span>
+                    </div>
+                    <div class="form__group form__group--check ">
+                        <div class="form__checkbox">
+                            <input id="4" type="checkbox" name="1" class="form__checkbox-input">
+                            <label for="4" class="form__checkbox-label">
+                                <span class="form__icon bg-blue">
+                                    @@include('../svg-icon/tg.html')
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form__checkbox ">
+                            <input id="5" type="checkbox" name="2" class="form__checkbox-input">
+                            <label for="5" class="form__checkbox-label">
+                                <span class="form__icon ">
+                                    @@include('../svg-icon/wt.html')
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form__checkbox">
+                            <input id="6" type="checkbox" name="3" class="form__checkbox-input">
+                            <label for="6" class="form__checkbox-label">
+                                <span class="form__icon ">
+                                    @@include('../svg-icon/vb.html')
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <span class="form__text">Удобней связь через мессенджер?</span>
+                    <button type="submit" class="btn primary">Получить каталог</button>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
