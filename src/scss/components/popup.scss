@@ -33,6 +33,23 @@
     z-index: 99;
     transition: opacity 0.5s ease;
   }
+
+  &::-webkit-scrollbar {
+    width: 11px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+  }
+
+  &--form {
+    max-width: 410px !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 670px;
+  }
   &__wrap {
     display: flex;
     flex-direction: column;
@@ -105,6 +122,7 @@
     top: 0px;
     opacity: 0;
     pointer-events: none;
+    width: 100%;
   }
 
   .slide-items > .active {

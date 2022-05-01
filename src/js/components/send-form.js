@@ -72,11 +72,9 @@ const sendForm = (() => {
   };
 
   const showErrors = (form, errors) => {
-    form
-      .querySelectorAll('input[name], select[name], textarea')
-      .forEach((input) => {
-        showErrorsForInput(input, errors && errors[input.name]);
-      });
+    form.querySelectorAll('input[name], select[name], textarea').forEach((input) => {
+      showErrorsForInput(input, errors && errors[input.name]);
+    });
   };
 
   const sendData = (data) => {
