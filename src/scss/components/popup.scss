@@ -52,12 +52,12 @@
   }
 
   &--quiz {
-    max-width: 100%;
+    max-width: 100% !important;
     padding: 0 !important;
     height: 100%;
     top: 0 !important;
-    transform: translate(0);
-    left: 0%;
+    transform: translate(-50%, 0);
+    left: 50%;
 
     .popup__wrap {
       background-color: $bg-color;
@@ -137,8 +137,8 @@
     pointer-events: none;
     width: 100%;
   }
-  
-  .slideGallery{
+
+  .slideGallery {
     .slide-items > * {
       object-fit: cover;
     }
