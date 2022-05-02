@@ -1,0 +1,30 @@
+.works-sections{
+
+}
+.works{
+    &__wrap{
+
+    }
+    .section-title{
+        padding-bottom: 60px;
+    }
+    &__gallery{
+        display: grid;
+        gap: 1vw;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+    }
+    &__img{
+        width: 28.1vw;
+        height: 28.1vw;
+        @include media("<=phone-md"){
+            width: 27.1vw;
+            height: 27.1vw;
+        }
+        img{
+            display: block;
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+}

@@ -95,7 +95,6 @@
     overflow: hidden;
     border-radius: 2.4rem;
   }
-
   .slide-items {
     position: relative;
     grid-area: 1/1;
@@ -123,6 +122,12 @@
     opacity: 0;
     pointer-events: none;
     width: 100%;
+  }
+  
+  .slideGallery{
+    .slide-items > * {
+      object-fit: cover;
+    }
   }
 
   .slide-items > .active {
