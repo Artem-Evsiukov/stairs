@@ -27,4 +27,20 @@
             border-radius: 12px;
         }
     }
+    &__button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+        &__img{
+            max-width: 45px;
+            max-height: 45px;
+            padding-left: 14px;
+            svg{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
 }
