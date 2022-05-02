@@ -44,3 +44,6 @@ $(function () {
   });
 });
 
+var player = new Playerjs({ id: 'playerTwo', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
+
+var player = new Playerjs({ id: 'playerOne', file: '../assets/video/video-block1.mp4', poster: 'assets/images/1.jpg' });
