@@ -1,49 +1,52 @@
-<form class="form" id="form-contact3" method="POST">
-    <div class="form__wrap">
-        <div class="form__head">
-            <h2 class="section-title mb-45">Сделаем точный расчёт </h2>
-            <p class="section-title color-base mb-94"> вашей лестницы</p>
+<div class="form__wrap">
+    <div class="form__head">
+        <h2 class="section-title mb-45">Сделаем точный расчёт </h2>
+        <p class="section-title color-base mb-94"> вашей лестницы</p>
+    </div>
+    <div class="form__body">
+        <div class="form__group">
+            <label class="form__name" for="name">Андрей Владимирович</label>
+            <input class="form__input" type="text" name="name" id="name" placeholder="Ваше имя и Фамилия" required>
+            <span class="form__error-text"></span>
         </div>
-        <div class="form__body">
-            <div class="form__group">
-                <label class="form__name" for="name">Андрей Владимирович</label>
-                <input class="form__input" type="text" name="name" id="name" placeholder="Ваше имя и Фамилия" required>
-                <span class="form__error-text"></span>
+        <div class="form__group">
+            <label class="form__name" for="email">Ваш номер телефона</label>
+            <input class="form__input" type="text" name="phone-ui" id="phone-ui" placeholder="+7 (___) ___-__-__"
+                data-mask="tel" required>
+            <span class="form__error-text"></span>
+        </div>
+        <div class="form__group form__group--check ">
+            <div class="form__checkbox">
+                <input id="checkbox61" type="checkbox" name="checkbox61" value="checkbox61"
+                    class="form__checkbox-input">
+                <label for="checkbox61" class="form__checkbox-label">
+                    <span class="form__icon">
+                        @@include('../svg-icon/tg.html')
+                    </span>
+                </label>
             </div>
-            <div class="form__group">
-                <label class="form__name" for="email">Ваш номер телефона</label>
-                <input class="form__input" type="text" name="phone-ui" id="phone-ui" placeholder="+7 (___) ___-__-__"
-                    data-mask="tel" required>
-                <span class="form__error-text"></span>
+            <div class="form__checkbox">
+                <input id="checkbox62" type="checkbox" name="checkbox62" value="checkbox62"
+                    class="form__checkbox-input">
+                <label for="checkbox62" class="form__checkbox-label">
+                    <span class="form__icon">
+                        @@include('../svg-icon/wt.html')
+                    </span>
+                </label>
             </div>
-            <div class="form__group form__group--check ">
-                <div class="form__checkbox">
-                    <input id="7" type="checkbox" name="7" class="form__checkbox-input">
-                    <label for="7" class="form__checkbox-label">
-                        <span class="form__icon">
-                            @@include('../svg-icon/tg.html')
-                        </span>
-                    </label>
-                </div>
-                <div class="form__checkbox">
-                    <input id="8" type="checkbox" name="8" class="form__checkbox-input">
-                    <label for="8" class="form__checkbox-label">
-                        <span class="form__icon">
-                            @@include('../svg-icon/wt.html')
-                        </span>
-                    </label>
-                </div>
-                <div class="form__checkbox">
-                    <input id="9" type="checkbox" name="9" class="form__checkbox-input">
-                    <label for="9" class="form__checkbox-label">
-                        <span class="form__icon">
-                            @@include('../svg-icon/vb.html')
-                        </span>
-                    </label>
-                </div>
+            <div class="form__checkbox">
+                <input id="checkbox63" type="checkbox" name="checkbox63" value="checkbox63"
+                    class="form__checkbox-input">
+                <label for="checkbox63" class="form__checkbox-label">
+                    <span class="form__icon">
+                        @@include('../svg-icon/vb.html')
+                    </span>
+                </label>
             </div>
-            <span class="form__text">Удобней связь через мессенджер?</span>
-            <button type="submit" class="btn primary">Получить ссылку</button>
+        </div>
+        <span class="form__text">Удобней связь через мессенджер?</span>
+        <div class="form__btn">
+            <button type="submit" class="btn primary" id="quizsubmit">Получить ссылку</button>
         </div>
     </div>
-</form>
+</div>
