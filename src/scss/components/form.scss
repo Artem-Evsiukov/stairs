@@ -135,9 +135,22 @@
     }
   }
 
+  &__btn {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+
   .section-title {
     margin-bottom: 0.5rem;
   }
+  .mb-45 {
+    margin-bottom: 4.5rem;
+  }
+  .mb-94 {
+    margin-bottom: 9.4rem !important;
+  }
+
   .color-base {
     color: $base-color;
     text-transform: uppercase;
@@ -154,12 +167,5 @@
   .bg-blue {
     background-image: linear-gradient(180deg, #37bbfe 0%, #007dbb 100%);
     border-radius: 50%;
-  }
-
-  .mb-45 {
-    margin-bottom: 4.5rem;
-  }
-  .mb-94 {
-    margin-bottom: 9.4rem;
   }
 }
