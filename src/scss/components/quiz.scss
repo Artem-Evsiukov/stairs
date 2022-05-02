@@ -3,13 +3,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $bg-color;
-    padding: 8rem 2.4rem 3.2rem;
+    padding: 4rem 2.4rem 3.2rem;
     max-width: 768px;
     width: 100%;
     margin: 0 auto;
-    height: 800px;
+    height: 480px;
     overflow-y: scroll;
+    @include media('>=phone') {
+        height: 580px;
+    }
 
     &::-webkit-scrollbar {
       width: 0;
@@ -114,9 +116,15 @@
       background-size: contain;
       width: 1.2rem;
       height: 1.2rem;
-      right: 2.4rem;
+      right: 1rem;
       top: 50%;
       transform: translateY(-50%);
+      @include media('>=phone') {
+        right: 1.2rem;
+      }
+      @include media('>=tablet') {
+        right: 2.4rem;
+      }
     }
   }
 
