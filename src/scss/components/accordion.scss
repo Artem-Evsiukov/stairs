@@ -9,17 +9,12 @@
 
   &__head {
     display: flex;
-    justify-content: space-between;
-    border: 1px solid #ccc;
-
-    &:hover {
-      .accordion__btn {
-        background-color: #ddd;
-      }
-    }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     &.active {
-      background-color: #ddd;
+      opacity: 0.8;
 
       .accordion__btn {
         svg {
@@ -43,10 +38,16 @@
   }
 
   &__btn {
-    width: 5rem;
+    width: 17rem;
+    height: 7rem;
     flex: none;
-    border: 1px solid #000;
-
+    position: absolute;
+    bottom: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    background-color: $base-color;
+    border-radius: 24px;
     svg {
       transition: $base-transition;
     }
@@ -54,36 +55,27 @@
 
   &__title {
     position: relative;
-    color: #444;
     cursor: pointer;
-    padding: 20px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     border: none;
     outline: none;
-    //margin-bottom: 10px;
-    border: 1px solid #000;
 
     &--more {
       &:after {
         position: absolute;
-        content: "+";
+        content: '+';
         right: 20px;
       }
 
       &.active {
         &:after {
-          content: "-";
+          content: '-';
         }
       }
     }
-    &:hover {
-      background-color: #ddd;
-    }
 
     &.active {
-      background-color: #ddd;
-
       & + .accordion__content {
         max-height: 1000px;
       }
@@ -94,16 +86,25 @@
     overflow: hidden;
     transition: all 0.3s;
     background-color: white;
-    box-shadow: 0px 0px 4px #000;
     width: calc(100% - 4px);
     margin: 0 auto;
   }
 
   &__descr {
-    padding: 10px 20px;
+    padding: 6.2rem 0 4rem;
   }
 
   .accordion {
     padding-left: 10px;
+  }
+
+  &__wrap {
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 6rem;
+  }
+
+  #playerOne {
+    min-height: 480px !important;
   }
 }

@@ -30,3 +30,17 @@ window.onscroll = function () {
     $('.header').removeClass('active');
   }
 };
+$(function () {
+  $('#escolta').click(function () {
+    video.playVideo();
+    //$("#video").playVideo();
+    //$("#video").trigger('play');
+    //$(".player").playVideo()
+  });
+
+  $('#pausa').click(function () {
+    video.stopVideo();
+    //$("#video").trigger('pause');
+  });
+});
+

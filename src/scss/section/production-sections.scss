@@ -1,5 +1,15 @@
-.production-sections {
+.production-sections,
+.software-sections {
   padding: 6.5rem 0 0;
+
+  .section-title {
+    margin-bottom: 4.5rem;
+  }
+}
+.software-sections {
+  .section-title {
+    margin-bottom: 3.7rem;
+  }
 }
 
 .production {
@@ -8,5 +18,34 @@
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
     border-radius: 24px;
     padding: 3.2rem 2.4rem;
+    position: relative;
+  }
+
+  &__img {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.6rem;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  &__images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5.2rem;
+  }
+  &__text {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5.2rem;
+    color: $production-color;
   }
 }
