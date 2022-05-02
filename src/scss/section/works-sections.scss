@@ -21,6 +21,10 @@
             width: 27.1vw;
             height: 27.1vw;
         }
+        @include media(">tablet"){
+            width: 100%;
+            height: auto;
+        }
         img{
             display: block;
             width: 100%;

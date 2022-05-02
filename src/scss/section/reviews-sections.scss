@@ -86,6 +86,9 @@
         @include media("<=phone-md"){
             height: 35.059vw;
           }
+        @include media(">tablet"){
+            height: 353px;
+        }
         img{
             width: 100%;
             height: inherit;
