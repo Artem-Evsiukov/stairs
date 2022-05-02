@@ -7,11 +7,6 @@ const swiperSlider = (() => {
     centerInsufficientSlides: false,
     observer: true,
     observeParents: true,
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true,
-    },
   });
 
   const tabSwiperTwo = new Swiper('.js-tab-sliderTwo', {
@@ -22,11 +17,6 @@ const swiperSlider = (() => {
     centerInsufficientSlides: false,
     observer: true,
     observeParents: true,
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true,
-    },
   });
 
   const tabSwiperThree = new Swiper('.js-tab-sliderThree', {
@@ -37,14 +27,19 @@ const swiperSlider = (() => {
     centerInsufficientSlides: false,
     observer: true,
     observeParents: true,
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true,
-    },
   });
 
   const tabSwiperFour = new Swiper('.js-tab-sliderFour', {
+    slidesPerView: 1.5,
+    spaceBetween: 20,
+    speed: 1000,
+    autoplay: true,
+    centerInsufficientSlides: true,
+    observer: true,
+    observeParents: true,
+  });
+
+  const tabSwiperFive = new Swiper('.js-tab-sliderFive', {
     slidesPerView: 1.5,
     spaceBetween: 20,
     speed: 1000,

@@ -63,6 +63,22 @@
     }
   }
 }
+.js-tab-sliderFive {
+  position: relative;
+  overflow: hidden;
+  .swiper-slide {
+    height: auto;
+    border-radius: 2.4rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      min-height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
 
 //
 .swiper-video-button-prev {
@@ -146,11 +162,11 @@
     background-color: $base-color;
   }
 }
-.js-reviews-slider{
-  .swiper-slide{
-    .swiper-slide__wrap{
+.js-reviews-slider {
+  .swiper-slide {
+    .swiper-slide__wrap {
       padding: 40px 24px;
-      background: #FFFFFF;
+      background: #ffffff;
       box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
       border-radius: 24px;
     }
