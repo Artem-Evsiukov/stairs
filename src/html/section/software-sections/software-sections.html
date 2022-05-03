@@ -1,10 +1,13 @@
-<section class="software-sections">
+<section class="software-sections" id="software-section">
     <div class="container">
         <div class="production">
             <div class="production__wrap">
                 <h2 class="section-title">Программное обеспечение</h2>
                 <div class="production__images">
-                    <img src="assets/images/sema.png" alt="">
+                    <picture>
+                        <source srcset="assets/images/sema.webp">
+                        <img loading="lazy" src="assets/images/sema.png" alt="">
+                    </picture>
                 </div>
                 @@include('../components/accordion-two.html')
             </div>

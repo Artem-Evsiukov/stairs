@@ -104,7 +104,9 @@
     margin-bottom: 6rem;
   }
 
-  #playerOne {
+  #playerOne,
+  #playerTwo {
     min-height: 480px !important;
+    border-radius: 2.4rem;
   }
 }

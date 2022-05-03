@@ -9,8 +9,11 @@
     margin: 0 auto;
     height: 480px;
     overflow-y: scroll;
-    @include media('>=phone') {
+    @include media('>=phone-md') {
         height: 580px;
+    }
+    @include media('>=phone') {
+        height: 680px;
     }
 
     &::-webkit-scrollbar {

@@ -63,6 +63,20 @@
       background-color: $bg-color;
       height: 100%;
     }
+    .popup__close {
+        top: 30px;
+    }  
+  }
+
+  &--slider {
+    .popup__close {
+      top: 10px;
+
+      &:before,
+      &:after {
+        background-color: $white;
+      }
+    }
   }
   &__wrap {
     display: flex;
@@ -78,17 +92,20 @@
   }
   &__close {
     position: absolute;
-    right: 39px;
-    top: 13px;
+    right: 30px;
+    top: 60px;
+    height: 2rem;
+    width: 2rem;
     z-index: 999;
-    @include media('>=tablet') {
-      right: 49px;
-      top: 23px;
-    }
+    // @include media('>=tablet') {
+    //   right: 49px;
+    //   top: 23px;
+    // }
     &:before,
     &:after {
       position: absolute;
-      left: 0;
+      right: 1rem;
+      top: 0;
       content: ' ';
       height: 20px;
       width: 2px;

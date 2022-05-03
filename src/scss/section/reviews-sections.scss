@@ -1,105 +1,111 @@
-.reviews-sections{
-    padding-top: 80px;
-    .between-text{
-        color:$secondary-color;
-        max-width: 308px;
-        line-height: 1.55;
-        margin: 0 auto;
-        span{
-            &:first-child{
-                color:$FEB;
-                font-weight: 700;
-            }
-            &:last-child{
-                color:$black;
-                font-weight: 700;
-            }
-        }
+.reviews-sections {
+  padding-top: 80px;
+  .between-text {
+    color: $secondary-color;
+    max-width: 308px;
+    line-height: 1.55;
+    margin: 0 auto;
+    span {
+      &:first-child {
+        color: $FEB;
+        font-weight: 700;
+      }
+      &:last-child {
+        color: $black;
+        font-weight: 700;
+      }
     }
+  }
 }
-.reviews{
-    .section-title{
-        padding-top: 64px;
-        line-height: 1.33;
-        span{
-            color:$base-color;
-        }
+.reviews {
+  .section-title {
+    padding-top: 64px;
+    line-height: 1.33;
+    span {
+      color: $base-color;
     }
-    &__wrap{
-        overflow-x: hidden; 
+  }
+  &__wrap {
+    overflow-x: hidden;
+  }
+  &__user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__img {
+      width: 50px;
+      height: 50px;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
-    &__user{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        &__img{
-            width: 50px;
-            height: 50px;
-            img{
-                width: 100%;
-                height: auto;
-            }
-        }
-        &__name{
-            padding-left: 1.6rem;
-            color:$name-color;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 2rem;
-            line-height: 1.2;
-        }
+    &__name {
+      padding-left: 1.6rem;
+      color: $name-color;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 1.2;
     }
-    &__star__date{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-top: 12px;
-        // &__stars{
+  }
+  &__star__date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 12px;
+    // &__stars{
 
-        // }
-        &__dates{
-            padding-left: 1.2rem;
-            font-family: $primary-font;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 1.6rem;
-            line-height: 1.5;
-            color: $date;
-        }
+    // }
+    &__dates {
+      padding-left: 1.2rem;
+      font-family: $primary-font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      color: $date;
     }
-    &__text{
-        font-size: 1.6rem;
-        line-height: 1.5;
-        color: $review-text;
-        text-align: left;
-        padding-top: 8px;
+  }
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $review-text;
+    text-align: left;
+    padding-top: 8px;
+  }
+  &__images {
+    padding-top: 27px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 42.059vw;
+    @include media('<=phone') {
+      height: 38.059vw;
     }
-    &__images{
-        padding-top: 27px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 42.059vw;
-        @include media("<=phone"){
-            height: 38.059vw;
-          }
-        @include media("<=phone-md"){
-            height: 35.059vw;
-          }
-        @include media(">tablet"){
-            height: 353px;
-        }
-        img{
-            width: 100%;
-            height: inherit;
-            border-radius: 12px;
-            &:first-child{
-                margin-right: 6px;
-            }
-        }
+    @include media('<=phone-md') {
+      height: 35.059vw;
+    }
+    @include media('>tablet') {
+      height: 353px;
+    }
+    picture {
+      width: 100%;
+      height: inherit;
+      border-radius: 12px;
+      overflow: hidden;
+      &:first-child {
+        margin-right: 6px;
+      }
+    }
 
+    img{
+        width: 100%;
+        display: block;
+        height: 100%;
     }
-    .js-reviews-slider{
-        margin-bottom: 80px;
-    }
+  }
+  .js-reviews-slider {
+    margin-bottom: 80px;
+  }
 }
