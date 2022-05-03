@@ -1,16 +1,19 @@
-<section class="masterscall-sections">
+<section class="masterscall-sections" id="masterscall-section">
     <div class="container">
         <div class="masterscall">
             <div class="masterscall__wrap">
-                <div class="section-title">
+                <h2 class="section-title">
                     нужен быстрый и точный проект?
-                </div>
+                </h2>
                 <div class="masterscall__form">
                     <form class="form" id="form-masterscall" method="POST">
                         <div class="form__wrap">
                             <div class="form__head">
                                 <div class="masterscall__img">
-                                    <img src="../assets/images/masterscall.png" alt="">
+                                    <picture>
+                                        <source loading="lazy" srcset="assets/images/masterscall.webp">
+                                        <img loading="lazy" src="../assets/images/masterscall.png" alt="">
+                                    </picture>
                                 </div>
                                 <div class="masterscall__form__title base-text">
                                     Вызов мастера на <span>3D замер</span>
@@ -19,18 +22,21 @@
                             <div class="form__body">
                                 <div class="form__group">
                                     <label class="form__name" for="name-masterscall">Ваше имя и Фамилия</label>
-                                    <input class="form__input" type="text" name="name-masterscall" id="name-masterscall" placeholder="Андрей Владимирович" required>
+                                    <input class="form__input" type="text" name="name-masterscall" id="name-masterscall"
+                                        placeholder="Андрей Владимирович" required>
                                     <span class="form__error-text"></span>
                                 </div>
                                 <div class="form__group">
                                     <label class="form__name" for="phone-ui-masterscall">Ваш номер телефона</label>
-                                    <input class="form__input" type="text" name="phone-ui-masterscall" id="phone-ui-masterscall" placeholder="+7 (___) ___-__-__"
-                                        data-mask="tel" required>
+                                    <input class="form__input" type="text" name="phone-ui-masterscall"
+                                        id="phone-ui-masterscall" placeholder="+7 (___) ___-__-__" data-mask="tel"
+                                        required>
                                     <span class="form__error-text"></span>
                                 </div>
                                 <div class="form__group form__group--check ">
                                     <div class="form__checkbox">
-                                        <input id="tg-masterscall" type="checkbox" name="tg-masterscall" class="form__checkbox-input">
+                                        <input id="tg-masterscall" type="checkbox" name="tg-masterscall"
+                                            class="form__checkbox-input">
                                         <label for="tg-masterscall" class="form__checkbox-label">
                                             <span class="form__icon">
                                                 @@include('../svg-icon/tg.html')
@@ -38,7 +44,8 @@
                                         </label>
                                     </div>
                                     <div class="form__checkbox">
-                                        <input id="wt-masterscall" type="checkbox" name="wt-masterscall" class="form__checkbox-input">
+                                        <input id="wt-masterscall" type="checkbox" name="wt-masterscall"
+                                            class="form__checkbox-input">
                                         <label for="wt-masterscall" class="form__checkbox-label">
                                             <span class="form__icon">
                                                 @@include('../svg-icon/wt.html')
@@ -46,17 +53,18 @@
                                         </label>
                                     </div>
                                     <div class="form__checkbox">
-                                        <input id="vb-masterscall" type="checkbox" name="vb-masterscall" class="form__checkbox-input">
+                                        <input id="vb-masterscall" type="checkbox" name="vb-masterscall"
+                                            class="form__checkbox-input">
                                         <label for="vb-masterscall" class="form__checkbox-label">
                                             <span class="form__icon">
                                                 @@include('../svg-icon/vb.html')
                                             </span>
                                         </label>
                                     </div>
-                    
-                    
-                    
-                    
+
+
+
+
                                 </div>
                                 <span class="form__text">Удобней связь через мессенджер?</span>
                                 <button type="submit" class="btn primary">Оставить заявку</button>

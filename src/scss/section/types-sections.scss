@@ -8,6 +8,10 @@
   .types__img {
     min-height: 100%;
     display: flex;
+
+    picture{
+        width: 100%;
+    }
   }
   .base-text {
     color: $base-color;
