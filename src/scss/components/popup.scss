@@ -16,11 +16,10 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -45%);
+  transform: translate(-50%, -50%);
   z-index: 999;
-  padding: 0 1.5rem;
+  padding: 0 2.4rem;
   width: 100%;
-  max-width: 320px;
   transition: opacity 0.5s ease;
   display: none;
 
@@ -129,7 +128,7 @@
   .slide-items {
     position: relative;
     grid-area: 1/1;
-    min-height: 49rem;
+    min-height: 95vh;
     overflow: hidden;
 
     img {
