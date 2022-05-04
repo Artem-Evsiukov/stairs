@@ -16,10 +16,8 @@ import Accordion from './components/accordion';
     tabs.init();
     swiperSlider.init();
     popups.init();
-    // inputmask.init();
   });
 })(jQuery);
-
 var scrolled;
 window.onscroll = function () {
   scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -38,7 +36,8 @@ var player = new Playerjs({ id: 'playerOne', file: '../assets/video/video-block1
 var player = new Playerjs({ id: 'playerThree', file: '../assets/video/video-block1.mp4', poster: 'assets/images/1.jpg' });
 
 $('#nav li').click(function (e) {
-  e.preventDefault();
+  // e.preventDefault();
   $('#nav li').removeClass('active');
   $(this).addClass('active');
+  $(".burger.js-burger-open").click();
 });
