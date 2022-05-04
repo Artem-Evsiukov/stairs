@@ -7,6 +7,7 @@ import tabs from './components/tabs';
 import swiperSlider from './components/slider';
 import popups from './components/popup';
 import Accordion from './components/accordion';
+import { inputmask } from './components/inputMask';
 
 (($) => {
   // When DOM is ready
@@ -16,6 +17,7 @@ import Accordion from './components/accordion';
     tabs.init();
     swiperSlider.init();
     popups.init();
+    inputmask();
   });
 })(jQuery);
 var scrolled;
