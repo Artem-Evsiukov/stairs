@@ -58,3 +58,14 @@ $('#telOne').on('focus', function () {
 $('#telTwo').on('focus', function () {
   $('#popupTwo').scrollTop(1500);
 });
+
+$(function () {
+  $('#telOne').usPhoneFormat({
+    format: '(xxx)xxx-xxxx',
+  });
+});
+$(function () {
+  $('#telTwo').usPhoneFormat({
+    format: '(xxx)xxx-xxxx',
+  });
+});
