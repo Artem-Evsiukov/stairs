@@ -64,8 +64,8 @@
       height: 100%;
     }
     .popup__close {
-        top: 30px;
-    }  
+      top: 30px;
+    }
   }
 
   &--slider {
@@ -131,6 +131,12 @@
     grid-area: 1/1;
     min-height: 49rem;
     overflow: hidden;
+
+    img {
+      width: 100%;
+      display: block;
+      height: 100%;
+    }
   }
 
   .slide-nav {
