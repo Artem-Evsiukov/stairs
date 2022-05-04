@@ -33,12 +33,28 @@ window.onscroll = function () {
 
 var player = new Playerjs({ id: 'playerTwo', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
 
-var player = new Playerjs({ id: 'playerOne', file: '../assets/video/video-block1.mp4', poster: 'assets/images/1.jpg' });
+var player = new Playerjs({ id: 'playerOne', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
 
-var player = new Playerjs({ id: 'playerThree', file: '../assets/video/video-block1.mp4', poster: 'assets/images/1.jpg' });
+var player = new Playerjs({ id: 'playerThree', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
 
 $('#nav li').click(function (e) {
-  e.preventDefault();
   $('#nav li').removeClass('active');
   $(this).addClass('active');
+  $('.burger.js-burger-open').click();
+});
+
+$('#nameOne').on('focus', function () {
+  $('#popupOne').scrollTop(1000);
+});
+
+$('#nameTwo').on('focus', function () {
+  $('#popupTwo').scrollTop(1000);
+});
+
+$('#telOne').on('focus', function () {
+  $('#popupOne').scrollTop(1500);
+});
+
+$('#telTwo').on('focus', function () {
+  $('#popupTwo').scrollTop(1500);
 });

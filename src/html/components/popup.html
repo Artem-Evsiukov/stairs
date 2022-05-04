@@ -304,7 +304,7 @@
 
 
 <!-- Fomr-popup -->
-<div class="popup popup--form" data-popup="form__one-popup">
+<div class="popup popup--form" data-popup="form__one-popup" id="popupOne">
     <button type="button" class="popup__close js-popup-close"></button>
     <div class="popup__wrap">
         <form class="form" id="form-contact" method="POST">
@@ -318,14 +318,15 @@
                 </div>
                 <div class="form__body">
                     <div class="form__group">
-                        <label class="form__name">Андрей Владимирович</label>
-                        <input class="form__input" type="text" name="name" placeholder="Ваше имя и Фамилия" required>
+                        <label class="form__name">Введите ваше имя</label>
+                        <input class="form__input" type="text" name="name" placeholder="Андрей Владимирович" required
+                            id="nameOne">
                         <span class="form__error-text"></span>
                     </div>
                     <div class="form__group">
                         <label class="form__name">Ваш номер телефона</label>
                         <input class="form__input" type="text" name="phone-ui" placeholder="+7 (___) ___-__-__"
-                            data-mask="tel" required>
+                            data-mask="tel" required id="telOne">
                         <span class="form__error-text"></span>
                     </div>
                     <div class="form__group form__group--check ">
@@ -345,14 +346,14 @@
                                 </span>
                             </label>
                         </div>
-                        <div class="form__checkbox">
+                        <!-- <div class="form__checkbox">
                             <input id="3" type="checkbox" name="3" class="form__checkbox-input">
                             <label for="3" class="form__checkbox-label">
                                 <span class="form__icon ">
                                     @@include('../svg-icon/vb.html')
                                 </span>
                             </label>
-                        </div>
+                        </div> -->
                     </div>
                     <span class="form__text">Удобней связь через мессенджер?</span>
                     <button type="submit" class="btn primary">Получить ссылку</button>
@@ -363,7 +364,7 @@
 </div>
 
 
-<div class="popup  popup--form" data-popup="form__two-popup">
+<div class="popup  popup--form" data-popup="form__two-popup" id="popupTwo">
     <button type="button" class="popup__close js-popup-close"></button>
     <div class="popup__wrap">
         <form class="form" id="form-contact2" method="POST">
@@ -376,14 +377,15 @@
                 </div>
                 <div class="form__body">
                     <div class="form__group">
-                        <label class="form__name">Андрей Владимирович</label>
-                        <input class="form__input" type="text" name="name" placeholder="Ваше имя и Фамилия" required>
+                        <label class="form__name">Ваше имя и Фамилия</label>
+                        <input class="form__input" type="text" name="name" placeholder="Андрей Владимирович" required
+                            id="nameTwo">
                         <span class="form__error-text"></span>
                     </div>
                     <div class="form__group">
                         <label class="form__name">Ваш номер телефона</label>
                         <input class="form__input" type="text" name="phone-ui" placeholder="+7 (___) ___-__-__"
-                            data-mask="tel" required>
+                            data-mask="tel" required id="telTwo">
                         <span class="form__error-text"></span>
                     </div>
                     <div class="form__group form__group--check ">
@@ -403,14 +405,14 @@
                                 </span>
                             </label>
                         </div>
-                        <div class="form__checkbox">
+                        <!-- <div class="form__checkbox">
                             <input id="6" type="checkbox" name="6" class="form__checkbox-input">
                             <label for="6" class="form__checkbox-label">
                                 <span class="form__icon ">
                                     @@include('../svg-icon/vb.html')
                                 </span>
                             </label>
-                        </div>
+                        </div> -->
                     </div>
                     <span class="form__text">Удобней связь через мессенджер?</span>
                     <button type="submit" class="btn primary">Получить каталог</button>
