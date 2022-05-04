@@ -59,4 +59,14 @@ $('#telOne').on('focus', function () {
 $('#telTwo').on('focus', function () {
   $('#popupTwo').scrollTop(1500);
 });
-
+$(".open_full").on("click",function(){
+  if ($(this).parent().children(".overflow-text").css('display') != 'inline'){
+    $(this).parent().children(".overflow-text").css('display','inline');
+     $(this).text("Скрыть");
+  }
+  else
+  {
+    $(this).parent().children(".overflow-text").css('display','none');
+     $(this).text("Ещё");
+  }
+  })
