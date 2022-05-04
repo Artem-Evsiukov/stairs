@@ -20,7 +20,6 @@ import { inputmask } from './components/inputMask';
     inputmask();
   });
 })(jQuery);
-
 var scrolled;
 window.onscroll = function () {
   scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -32,11 +31,12 @@ window.onscroll = function () {
   }
 };
 
+var player1 = new Playerjs({ id: 'playerOne', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
+// 
+// const player1 = new Plyr('#playerOne');
 var player = new Playerjs({ id: 'playerTwo', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
 
-var player = new Playerjs({ id: 'playerOne', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
-
-var player = new Playerjs({ id: 'playerThree', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
+var player2 = new Playerjs({ id: 'playerThree', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
 
 $('#nav li').click(function (e) {
   $('#nav li').removeClass('active');
