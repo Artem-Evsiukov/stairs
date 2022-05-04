@@ -73,6 +73,27 @@
     color: $review-text;
     text-align: left;
     padding-top: 8px;
+    // 
+    // overflow: hidden;
+    // display: -webkit-box;
+    // -webkit-line-clamp: 3;
+    // -webkit-box-orient: vertical;
+    // line-height: 1.3em;
+    // height: 3.9em;
+    // &:after{
+    //   display: inline;
+    //   content: "Ещё";
+    //   color:$name-color;
+    //   cursor: pointer;
+    // }
+    // 
+    .overflow-text{
+      display: none;
+    }
+    .open_full{
+      color:$name-color;
+      cursor: pointer;
+    }
   }
   &__images {
     padding-top: 27px;
