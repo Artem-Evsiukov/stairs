@@ -20,6 +20,7 @@ import { inputmask } from './components/inputMask';
     inputmask();
   });
 })(jQuery);
+
 var scrolled;
 window.onscroll = function () {
   scrolled = window.pageYOffset || document.documentElement.scrollTop;
