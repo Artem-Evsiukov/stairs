@@ -33,10 +33,14 @@ window.onscroll = function () {
 
 var player1 = new Playerjs({ id: 'playerOne', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
 // 
-// const player1 = new Plyr('#playerOne');
 var player = new Playerjs({ id: 'playerTwo', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
 
 var player2 = new Playerjs({ id: 'playerThree', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
+
+var player6 = new Playerjs({ id: 'playerSliderBlock1', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
+var player7 = new Playerjs({ id: 'playerSliderBlock2', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
+var player8 = new Playerjs({ id: 'playerSliderBlock3', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
+var player9 = new Playerjs({ id: 'playerSliderBlock4', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
 
 $('#nav li').click(function (e) {
   $('#nav li').removeClass('active');
