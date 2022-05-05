@@ -8,6 +8,7 @@
         border-radius: 24px;
     }
     &__img{
+        padding-top: 30px;
         img{
             width: 100%;
             display: block;
@@ -19,6 +20,13 @@
     }
     &__form{
         margin-top: 22px;
+        .form__group + .form__group{
+            margin-top: 4.3rem;
+        }
+        .form__text{
+            margin-top: 6px;
+            margin-bottom: 5rem;
+        }
         &__title{
             display: flex;
             flex-direction: column;
@@ -27,7 +35,7 @@
             line-height: 1.4;
             text-align: center;
             text-transform: uppercase;
-            margin-top: 38px;
+            margin-top: 24px;
             margin-bottom: 39px;
             span{
                 color:$base-color;
