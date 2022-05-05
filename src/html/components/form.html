@@ -1,4 +1,4 @@
-<div class="form__wrap">
+<div class="form__wrap" id="formQuiz">
     <div class="form__head">
         <h2 class="section-title mb-45">Сделаем точный расчёт </h2>
         <p class="section-title color-base mb-94"> вашей лестницы</p>
@@ -6,13 +6,13 @@
     <div class="form__body">
         <div class="form__group">
             <label class="form__name" for="name">Андрей Владимирович</label>
-            <input class="form__input" type="text" name="name" placeholder="Ваше имя и Фамилия" required>
+            <input class="form__input" type="text" name="name" placeholder="Ваше имя и Фамилия" required id="quizName">
             <span class="form__error-text"></span>
         </div>
         <div class="form__group">
             <label class="form__name" for="email">Ваш номер телефона</label>
             <input class="form__input" type="text" name="phone-ui" id="phone-ui" placeholder="+7 (___) ___-__-__"
-                data-mask="tel" required>
+                data-mask="tel" required id="quizTel">
             <span class="form__error-text"></span>
         </div>
         <div class="form__group form__group--check ">
