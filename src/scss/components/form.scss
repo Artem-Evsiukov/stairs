@@ -1,6 +1,15 @@
 .form {
   padding: 5rem 0;
 
+  &--quiz {
+    padding: 0;
+
+    .form-wrap {
+      position: relative;
+      z-index: 99;
+    }
+  }
+
   width: 100%;
   &__wrap {
     display: flex;
