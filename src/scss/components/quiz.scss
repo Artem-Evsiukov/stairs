@@ -1,3 +1,6 @@
+.form-quiz {
+  position: relative;
+}
 .quiz {
   &__wrap {
     display: flex;
@@ -238,6 +241,15 @@
 
   input[type='checkbox']:checked + label {
     border: 1px solid $base-color;
+  }
+
+  .form__wrap {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
   }
 
   .mb-45 {

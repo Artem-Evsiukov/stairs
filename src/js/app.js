@@ -32,7 +32,7 @@ window.onscroll = function () {
 };
 
 var player1 = new Playerjs({ id: 'playerOne', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
-// 
+//
 // const player1 = new Plyr('#playerOne');
 var player = new Playerjs({ id: 'playerTwo', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
 
@@ -59,14 +59,21 @@ $('#telOne').on('focus', function () {
 $('#telTwo').on('focus', function () {
   $('#popupTwo').scrollTop(1500);
 });
-$(".open_full").on("click",function(){
-  if ($(this).parent().children(".overflow-text").css('display') != 'inline'){
-    $(this).parent().children(".overflow-text").css('display','inline');
-     $(this).text("Скрыть");
+
+$('#quizName').on('focus', function () {
+  $('#formQuiz').scrollTop(1500);
+});
+
+$('#quizTel').on('focus', function () {
+  $('#formQuiz').scrollTop(1500);
+});
+
+$('.open_full').on('click', function () {
+  if ($(this).parent().children('.overflow-text').css('display') != 'inline') {
+    $(this).parent().children('.overflow-text').css('display', 'inline');
+    $(this).text('Скрыть');
+  } else {
+    $(this).parent().children('.overflow-text').css('display', 'none');
+    $(this).text('Ещё');
   }
-  else
-  {
-    $(this).parent().children(".overflow-text").css('display','none');
-     $(this).text("Ещё");
-  }
-  })
+});
