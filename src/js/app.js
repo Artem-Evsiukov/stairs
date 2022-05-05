@@ -74,3 +74,51 @@ $('.open_full').on('click', function () {
     $(this).text('Ещё');
   }
 });
+
+$(".quiz__wrap").on( 'scroll', function(){
+  if ($("#firstScreen").css('display')!= 'none')
+  {
+      if ($("#firstScreen").height() + $("#firstScreen").offset().top - $(".quiz__btn").offset().top-30<0){
+          $('.quiz__btn').addClass("blocked");
+      }
+      else{
+          $('.quiz__btn').removeClass("blocked");
+      }
+  }
+  if ($("#secondScreen").css('display')!= 'none')
+  {
+      if ($("#secondScreen").height() + $("#secondScreen").offset().top - $(".quiz__btn").offset().top-30<0){
+          $('.quiz__btn').addClass("blocked");
+      }
+      else{
+          $('.quiz__btn').removeClass("blocked");
+      }
+  }
+  if ($("#thirdScreen").css('display')!= 'none')
+  {
+      if ($("#thirdScreen").height() + $("#thirdScreen").offset().top - $(".quiz__btn").offset().top-30<0){
+          $('.quiz__btn').addClass("blocked");
+      }
+      else{
+          $('.quiz__btn').removeClass("blocked");
+      }
+  }
+  if ($("#fourthScreen").css('display')!= 'none')
+  {
+      if ($("#fourthScreen").height() + $("#fourthScreen").offset().top - $(".quiz__btn").offset().top-30<0){
+          $('.quiz__btn').addClass("blocked");
+      }
+      else{
+          $('.quiz__btn').removeClass("blocked");
+      }
+  }
+  if ($("#fifthScreen").css('display')!= 'none')
+  {
+      if ($("#fifthScreen").height() + $("#fifthScreen").offset().top - $(".quiz__btn").offset().top-30<0){
+          $('.quiz__btn').addClass("blocked");
+      }
+      else{
+          $('.quiz__btn').removeClass("blocked");
+      }
+  }
+});

@@ -169,6 +169,12 @@
     position: relative;
     z-index: 2;
     margin: 0 auto;
+    transition: $base-transition;
+    &.blocked{
+      &::before{
+        display: none;
+      }
+    }
 
     &::before {
       content: '';
