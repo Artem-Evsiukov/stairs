@@ -9,8 +9,8 @@
     min-height: 100%;
     display: flex;
 
-    picture{
-        width: 100%;
+    picture {
+      width: 100%;
     }
   }
   .base-text {
@@ -18,16 +18,20 @@
     margin-bottom: 3.8rem;
     display: block;
     text-align: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 .types-wrap {
   margin-bottom: 4rem;
 }
-.types{
-    &__text{
-        color: $black !important;
-    }
-    .primary{
-        margin-bottom: 6rem;
-    }
+.types {
+  &__text {
+    color: $secondary-color !important;
+  }
+  .primary {
+    margin-bottom: 6rem;
+  }
 }
