@@ -17,14 +17,16 @@
     &__text{
         color:$white;
         z-index: 1;
-        
+    }
+    .max-width290{
+        max-width: 290px;
     }
     &__img{
         // width: 603px;
         width: 404px;
         margin-top: -52px;
         left: 12px;
-        margin-bottom: -54px;
+        margin-bottom: -62px;
         position: relative;
         z-index: 0;
     }
