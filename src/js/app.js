@@ -8,7 +8,7 @@ import swiperSlider from './components/slider';
 import popups from './components/popup';
 import Accordion from './components/accordion';
 import { inputmask } from './components/inputMask';
-import {sendForm,validate} from './components/send-form';
+import sendForm from './components/send-form';
 
 (($) => {
   // When DOM is ready
