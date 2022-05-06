@@ -8,6 +8,7 @@ import swiperSlider from './components/slider';
 import popups from './components/popup';
 import Accordion from './components/accordion';
 import { inputmask } from './components/inputMask';
+import {sendForm,validate} from './components/send-form';
 
 (($) => {
   // When DOM is ready
@@ -18,6 +19,7 @@ import { inputmask } from './components/inputMask';
     swiperSlider.init();
     popups.init();
     inputmask();
+    sendForm.init();
   });
 })(jQuery);
 var scrolled;
