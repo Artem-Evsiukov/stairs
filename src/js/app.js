@@ -33,13 +33,15 @@ window.onscroll = function () {
 
 var player1 = new Playerjs({ id: 'playerOne', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
 var player = new Playerjs({ id: 'playerTwo', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg' });
-var player2 = new Playerjs({ id: 'playerThree', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg', autoplay: 1 });
+// var player2 = new Playerjs({ id: 'playerThree', file: '../assets/video/video2.mp4', poster: 'assets/images/1.jpg', autoplay: 1 });
 
 // 
 const plur_player = new Plyr('#player');
 const plur_player1 = new Plyr('#player1');
 const plur_player2 = new Plyr('#player2');
 const plur_player3 = new Plyr('#player3');
+var plur_player4 = new Plyr('#player4');
+// $(".showroom__video .plyr__control.plyr__control--overlaid").click() 
 // 
 
 $('#nav li').click(function (e) {
