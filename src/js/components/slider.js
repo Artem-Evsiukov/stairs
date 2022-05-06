@@ -58,6 +58,7 @@ const swiperSlider = (() => {
 
   const videoSwiper = new Swiper('.js-video-slider', {
     slidesPerView: 1,
+    spaceBetween: 20,
     pagination: {
       el: '.swiper-video-pagination',
       type: 'bullets',
@@ -100,6 +101,12 @@ const swiperSlider = (() => {
     // },
   });
   const reviewsImagesSwiper = new Swiper('.js-reviews-images-slider', {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    centerInsufficientSlides: true,
+  });
+
+  const reviewsImagesSwiperTwo = new Swiper('.js-reviewsTwo-images-slider', {
     slidesPerView: 2,
     spaceBetween: 20,
     centerInsufficientSlides: true,
