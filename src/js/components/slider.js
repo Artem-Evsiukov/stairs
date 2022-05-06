@@ -111,7 +111,21 @@ const swiperSlider = (() => {
     spaceBetween: 6,
     centerInsufficientSlides: true,
   });
-
+  const reviewsImagesSwiperTree = new Swiper('.js-reviewsTree-images-slider', {
+    slidesPerView: 1.9,
+    spaceBetween: 6,
+    centerInsufficientSlides: true,
+  });
+  const reviewsImagesSwiperFour = new Swiper('.js-reviewsFour-images-slider', {
+    slidesPerView: 1.9,
+    spaceBetween: 6,
+    centerInsufficientSlides: true,
+  });
+  const reviewsImagesSwiperFive = new Swiper('.js-reviewsFive-images-slider', {
+    slidesPerView: 1.9,
+    spaceBetween: 6,
+    centerInsufficientSlides: true,
+  });
   const init = () => {};
 
   return {
