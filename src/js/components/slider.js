@@ -107,8 +107,8 @@ const swiperSlider = (() => {
   });
 
   const reviewsImagesSwiperTwo = new Swiper('.js-reviewsTwo-images-slider', {
-    slidesPerView: 2,
-    spaceBetween: 20,
+    slidesPerView: 1.9,
+    spaceBetween: 6,
     centerInsufficientSlides: true,
   });
 
