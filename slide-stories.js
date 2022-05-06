@@ -69,3 +69,7 @@ new SlideStories('slideEight');
 new SlideStories('slideNine');
 new SlideStories('slideTen');
 new SlideStories('slideGallery');
+new SlideStories('reviews-popup-1');
+new SlideStories('reviews-popup-2');
+new SlideStories('reviews-popup-3');
+new SlideStories('reviews-popup-4');
