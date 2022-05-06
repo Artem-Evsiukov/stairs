@@ -1,15 +1,13 @@
 .buttons-sections {
-  padding: 58px 0;
+  position: fixed;
+  bottom: 12px;
+  z-index: 999;
 }
 .buttons {
   &__wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    @include media('<=phone') {
-      flex-direction: column;
-    }
   }
   &__calculation {
     display: flex;
@@ -17,16 +15,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 12px 24px;
+    height: 7rem;
+    max-width: 184px;
+    width: 100%;
     background-color: $calculation;
     border-radius: 24px 24px 24px 0px;
-    margin-right: 7px;
+    margin-right: 12px;
     cursor: pointer;
-    @include media('<=phone') {
-      margin-right: 0px;
-      margin-bottom: 12px;
-      max-width: 270px;
-    }
-    // max-width: 184px;
+
     span {
       font-family: $primary-font;
       font-style: normal;
@@ -54,9 +50,10 @@
     padding: 12px 24px;
     background-color: $question;
     border-radius: 24px 24px 0px 24px;
-    @include media('<=phone') {
-      max-width: 270px;
-    }
+    height: 7rem;
+    max-width: 184px;
+    width: 100%;
+
     span {
       font-family: $primary-font;
       font-style: normal;
