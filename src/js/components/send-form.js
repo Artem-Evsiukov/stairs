@@ -90,11 +90,13 @@ const sendForm = (() => {
       encode: true,
     }).done((response) => {
       // console.log(response)
-      if (response.success) {
+      if (response) {
         // popups.hidePopup();
         // popups.showPopup('success-popup');
-        $("#form-contact").parent().parent().children(".js-popup-close").click()
-        $("#form_success").click()
+        $("#form-contact").parent().parent().children(".js-popup-close").click();
+        setTimeout(function(){
+          $("#form_success").click();
+        }, 1000);
       }
     });
   };
@@ -107,7 +109,7 @@ const sendForm = (() => {
       encode: true,
     }).done((response) => {
       // console.log(response)
-      if (response.success) {
+      if (response) {
         popups.hidePopup();
         popups.showPopup('success-popup');
       }
@@ -122,11 +124,13 @@ const sendForm = (() => {
       encode: true,
     }).done((response) => {
       // console.log(response)
-      if (response.success) {
+      if (response) {
         // popups.hidePopup();
         // popups.showPopup('success-popup');
-        $("#form-contact2").parent().parent().children(".js-popup-close").click()
-        $("#form_success").click()
+        $("#form-contact2").parent().parent().children(".js-popup-close").click();
+        setTimeout(function(){
+          $("#form_success").click();
+        }, 1000);
       }
     });
   };
@@ -139,11 +143,11 @@ const sendForm = (() => {
       encode: true,
     }).done((response) => {
       // console.log(response)
-      if (response.success) {
+      if (response) {
         // popups.hidePopup();
         // popups.showPopup('success-popup');
         // $("#form-contact").parent().parent().children(".js-popup-close").click()
-        $("#form_success").click()
+        $("#form_success").click();
       }
     });
   };
@@ -160,8 +164,10 @@ const sendForm = (() => {
       if (response.success) {
         // popups.hidePopup();
         // popups.showPopup('success-popup');
-        $("#form-contact-tree").parent().parent().children(".js-popup-close").click()
-        $("#form_success").click()
+        $("#form-contact-tree").parent().parent().children(".js-popup-close").click();
+        setTimeout(function(){
+          $("#form_success").click();
+        }, 1000);
       }
     });
   };
