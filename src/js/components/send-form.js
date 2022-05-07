@@ -30,6 +30,7 @@ const FORM = document.getElementById('form-contact');
 const FORM1 = document.getElementById('form-contact2');
 const FORM2 = document.getElementById('Quiz');
 const FORM3 = document.getElementById('form-masterscall');
+const FORM4 = document.getElementById('form-contact-tree');
 const FORM_GROUP = 'form__group';
 const MESSAGE = '.form__error-text';
 
@@ -90,8 +91,10 @@ const sendForm = (() => {
     }).done((response) => {
       // console.log(response)
       if (response.success) {
-        popups.hidePopup();
-        popups.showPopup('success-popup');
+        // popups.hidePopup();
+        // popups.showPopup('success-popup');
+        $("#form-contact").parent().parent().children(".js-popup-close").click()
+        $("#form_success").click()
       }
     });
   };
@@ -120,8 +123,10 @@ const sendForm = (() => {
     }).done((response) => {
       // console.log(response)
       if (response.success) {
-        popups.hidePopup();
-        popups.showPopup('success-popup');
+        // popups.hidePopup();
+        // popups.showPopup('success-popup');
+        $("#form-contact2").parent().parent().children(".js-popup-close").click()
+        $("#form_success").click()
       }
     });
   };
@@ -135,8 +140,28 @@ const sendForm = (() => {
     }).done((response) => {
       // console.log(response)
       if (response.success) {
-        popups.hidePopup();
-        popups.showPopup('success-popup');
+        // popups.hidePopup();
+        // popups.showPopup('success-popup');
+        // $("#form-contact").parent().parent().children(".js-popup-close").click()
+        $("#form_success").click()
+      }
+    });
+  };
+
+  const sendData4 = (data) => {
+    $.ajax({
+      type: 'POST',
+      url: '../getExcursion.php',
+      data, // serializes the form's elements.
+      dataType: 'json',
+      encode: true,
+    }).done((response) => {
+      // console.log(response)
+      if (response.success) {
+        // popups.hidePopup();
+        // popups.showPopup('success-popup');
+        $("#form-contact-tree").parent().parent().children(".js-popup-close").click()
+        $("#form_success").click()
       }
     });
   };
@@ -202,6 +227,21 @@ const sendForm = (() => {
       });
     }
   };
+  const validationForm4 = () => {
+    if (FORM4 !== null) {
+      FORM4.addEventListener('submit', function sub(ev) {
+        ev.preventDefault();
+        // const values = validate.collectFormValues(this);
+        // const errors = validate(values, constraints);
+        // if (errors) {
+          // showErrors(this, errors || {});
+        // } else {
+          const data = $(this).serialize();
+          sendData4(data);
+        // }
+      });
+    }
+  };
 
   const init = () => {
     if (document.getElementsByClassName('form').length > 0) {
@@ -209,6 +249,7 @@ const sendForm = (() => {
       validationForm1();
       validationForm2();
       validationForm3();
+      validationForm4();
     }
   };
 
