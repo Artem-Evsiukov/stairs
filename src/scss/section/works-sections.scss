@@ -1,60 +1,154 @@
-.works-sections{
-
+.works-sections {
 }
-.works{
-    &__wrap{
+.works {
+  &__wrap {
+  }
+  .section-title {
+    padding-bottom: 60px;
+  }
+  &__gallery {
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+  &__img {
+    width: 28.1vw;
+    height: 28.1vw;
+    @include media('<=phone-md') {
+      width: 27.1vw;
+      height: 27.1vw;
+    }
+    @include media('>tablet') {
+      width: 100%;
+      height: auto;
+    }
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 12px;
+    }
+  }
+  &__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
+    padding: 1.2rem 3rem 1.3rem;
+    position: relative;
+    max-width: 38rem !important;
+    width: 100%;
+    transition: $base-transition;
+    span {
+      @include media('<=phone-md') {
+        font-size: 1.6rem;
+      }
+    }
 
+    &-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      margin-right: 1rem;
     }
-    .section-title{
-        padding-bottom: 60px;
+
+    &-img,
+    &-img2 {
+      position: absolute;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      animation-timing-function: step-end;
+      transition: $base-transition;
+      @include media('<=phone-md') {
+        max-width: 35px;
+        max-height: 35px;
+        padding-left: 9px;
+      }
+      svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
     }
-    &__gallery{
-        display: grid;
-        gap: 1vw;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
+    &-img {
+      animation-name: btn-1;
+      opacity: 0;
     }
-    &__img{
-        width: 28.1vw;
-        height: 28.1vw;
-        @include media("<=phone-md"){
-            width: 27.1vw;
-            height: 27.1vw;
-        }
-        @include media(">tablet"){
-            width: 100%;
-            height: auto;
-        }
-        img{
-            display: block;
-            width: 100%;
-            border-radius: 12px;
-        }
+    &-img2 {
+      animation-name: btn-2;
+      opacity: 0;
+      z-index: 1;
     }
-    &__button{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-top: 60px;
-        span{
-            @include media("<=phone-md"){
-                font-size: 1.6rem;
-            }
-        }
-        &-img{
-            max-width: 45px;
-            max-height: 45px;
-            padding-left: 14px;
-            @include media("<=phone-md"){
-                max-width: 35px;
-                max-height: 35px;
-                padding-left: 9px;
-            }
-            svg{
-                width: 100%;
-                height: auto;
-            }
-        }
+    @keyframes btn-1 {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        z-index: 1;
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
     }
+    @keyframes btn-2 {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+        z-index: -1;
+      }
+      100% {
+        opacity: 0;
+        z-index: -1;
+      }
+    }
+    &:focus {
+      background-color: $base-color;
+      box-shadow: 0px 10px 30px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .submenu {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      height: auto;
+      width: 100%;
+      transform: scaleY(0);
+      transform-origin: 0 0;
+      box-shadow: 0px 10px 30px 6px rgba(0, 0, 0, 0.5);
+      background-color: $bg-color;
+      z-index: 2;
+      transition: $base-transition;
+
+      li {
+        padding: 2rem;
+        border-bottom: 1px solid $black;
+        box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
+
+        &:last-child {
+          border: none;
+        }
+      }
+      a {
+        display: block;
+        width: 100%;
+        color: $black;
+      }
+    }
+  }
+  &:hover {
+    .submenu {
+      transform: scaleY(1);
+    }
+  }
 }

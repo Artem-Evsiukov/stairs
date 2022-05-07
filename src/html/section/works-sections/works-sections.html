@@ -61,11 +61,21 @@
                         </picture>
                     </div>
                 </div>
-                <button class="works__button btn primary js-show-popup" data-trigger="form__one-popup">
+                <button class="works__button btn primary">
+                    <ul class="submenu">
+                        <li><a href="#">Telegram</a></li>
+                        <li><a href="#">WatsApp</a></li>
+                    </ul>
                     <span>Ответим на любой вопрос</span>
-                    <div class="works__button-img">
-                        @@include('../svg-icon/tg.html')
+                    <div class="works__button-wrap">
+                        <span class="works__button-img">
+                            @@include('../svg-icon/tg.html')
+                        </span>
+                        <span class="works__button-img2">
+                            @@include('../svg-icon/wt.html')
+                        </span>
                     </div>
+
                 </button>
             </div>
         </div>

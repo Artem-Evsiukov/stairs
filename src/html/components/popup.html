@@ -413,6 +413,56 @@
     </div>
 </div>
 
+<div class="popup popup--form" data-popup="form__Three-popup" id="popupThree">
+    <button type="button" class="popup__close js-popup-close"></button>
+    <div class="popup__wrap">
+        <form class="form" id="form-contact" method="POST">
+            <div class="form__wrap">
+                <div class="form__head">
+                    <h2 class="section-title">Оставь контакт </h2>
+                    <p class="base-text color-base">Для записи на экскурсию</p>
+                </div>
+                <div class="form__body">
+                    <div class="form__group">
+                        <label class="form__name">Введите ваше имя</label>
+                        <input class="form__input" type="text" name="name" placeholder="Андрей Владимирович" required
+                            id="nameOne">
+                        <span class="form__error-text"></span>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__name">Ваш номер телефона</label>
+                        <input class="form__input" name="telThree" data-mask="tel" type="text"
+                            placeholder="+7 (___) ___-__-__" data-mask="tel" required id="telThree">
+                        <span class="form__error-text"></span>
+                    </div>
+                    <div class="form__group form__group--check ">
+                        <div class="form__checkbox">
+                            <input id="3-3" type="checkbox" name="telegram" class="form__checkbox-input">
+                            <label for="3-3" class="form__checkbox-label">
+                                <span class="form__icon">
+                                    @@include('../svg-icon/tg.html')
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form__checkbox">
+                            <input id="4-4" type="checkbox" name="watsapp" class="form__checkbox-input">
+                            <label for="4-4" class="form__checkbox-label">
+                                <span class="form__icon ">
+                                    @@include('../svg-icon/wt.html')
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <span class="form__text">Удобней связь через мессенджер?</span>
+                    <button type="submit" class="btn primary">Записаться на экскурсию</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- slider -->
+
 <div class="popup popup--slider" data-popup="gallery-one-popup">
     <button type="button" class="popup__close js-popup-close"></button>
     <div class="popup__wrap">
@@ -478,7 +528,7 @@
 <div class="popup popup--video" data-popup="popup-video">
     <button type="button" class="popup__close js-popup-close"></button>
     <div class="popup__wrap">
-        <video preload="auto" id="playerOne" playsinline controls="" poster="assets/images/1.jpg" autoplay="false">
+        <video preload="auto" id="playerOne" playsinline controls="" poster="assets/images/1.jpg">
             <source src="../assets/video/video2.mp4" type="video/mp4" />
         </video>
         <button class="btn primary"> Записаться на экскурсию</button>
@@ -487,7 +537,7 @@
 <div class="popup popup--video" data-popup="popup-videoTwo">
     <button type="button" class="popup__close js-popup-close"></button>
     <div class="popup__wrap">
-        <video preload="auto" id="playerTwo" playsinline controls="" poster="assets/images/1.jpg" autoplay="false">
+        <video preload="auto" id="playerTwo" playsinline controls="" poster="assets/images/1.jpg">
             <source src="../assets/video/video2.mp4" type="video/mp4" />
         </video>
         <button class="btn primary"> Записаться на экскурсию</button>
