@@ -413,6 +413,8 @@
     </div>
 </div>
 
+<!-- Popup-запись на экскурсию-->
+
 <div class="popup popup--form" data-popup="form__Three-popup" id="popupThree">
     <button type="button" class="popup__close js-popup-close"></button>
     <div class="popup__wrap">
@@ -458,6 +460,16 @@
                 </div>
             </div>
         </form>
+    </div>
+</div>
+
+<!-- Popup-quiz -->
+
+
+<div class="popup popup--quiz" data-popup="popup-quiz">
+    <button type="button" class="popup__close js-popup-close"></button>
+    <div class="popup__wrap">
+        @@include('../components/quiz.html')
     </div>
 </div>
 
@@ -513,15 +525,7 @@
         </div>
     </div>
 </div>
-<!-- Popup-quiz -->
 
-
-<div class="popup popup--quiz" data-popup="popup-quiz">
-    <button type="button" class="popup__close js-popup-close"></button>
-    <div class="popup__wrap">
-        @@include('../components/quiz.html')
-    </div>
-</div>
 
 
 <!--Popup-video-->
@@ -531,7 +535,7 @@
         <video preload="auto" id="playerOne" playsinline controls="" poster="assets/images/1.jpg">
             <source src="../assets/video/video2.mp4" type="video/mp4" />
         </video>
-        <button class="btn primary"> Записаться на экскурсию</button>
+        <button class="btn primary js-show-popup" data-trigger="form__Three-popup"> Записаться на экскурсию</button>
     </div>
 </div>
 <div class="popup popup--video" data-popup="popup-videoTwo">
@@ -540,7 +544,7 @@
         <video preload="auto" id="playerTwo" playsinline controls="" poster="assets/images/1.jpg">
             <source src="../assets/video/video2.mp4" type="video/mp4" />
         </video>
-        <button class="btn primary"> Записаться на экскурсию</button>
+        <button class="btn primary js-show-popup" data-trigger="form__Three-popup"> Записаться на экскурсию</button>
     </div>
 </div>
 
