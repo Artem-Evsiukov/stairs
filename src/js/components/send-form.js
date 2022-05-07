@@ -89,10 +89,7 @@ const sendForm = (() => {
       dataType: 'json',
       encode: true,
     }).done((response) => {
-      // console.log(response)
       if (response) {
-        // popups.hidePopup();
-        // popups.showPopup('success-popup');
         $("#form-contact").parent().parent().children(".js-popup-close").click();
         setTimeout(function(){
           $("#form_success").click();
@@ -110,8 +107,10 @@ const sendForm = (() => {
     }).done((response) => {
       // console.log(response)
       if (response) {
-        popups.hidePopup();
-        popups.showPopup('success-popup');
+        $("#form-contact2").parent().parent().children(".js-popup-close").click();
+        setTimeout(function(){
+          $("#form_success").click();
+        }, 1000);
       }
     });
   };
@@ -123,11 +122,8 @@ const sendForm = (() => {
       dataType: 'json',
       encode: true,
     }).done((response) => {
-      // console.log(response)
       if (response) {
-        // popups.hidePopup();
-        // popups.showPopup('success-popup');
-        $("#form-contact2").parent().parent().children(".js-popup-close").click();
+        $("#Quiz").parent().parent().children(".js-popup-close").click();
         setTimeout(function(){
           $("#form_success").click();
         }, 1000);
@@ -142,11 +138,7 @@ const sendForm = (() => {
       dataType: 'json',
       encode: true,
     }).done((response) => {
-      // console.log(response)
       if (response) {
-        // popups.hidePopup();
-        // popups.showPopup('success-popup');
-        // $("#form-contact").parent().parent().children(".js-popup-close").click()
         $("#form_success").click();
       }
     });
@@ -160,10 +152,7 @@ const sendForm = (() => {
       dataType: 'json',
       encode: true,
     }).done((response) => {
-      // console.log(response)
-      if (response.success) {
-        // popups.hidePopup();
-        // popups.showPopup('success-popup');
+      if (response) {
         $("#form-contact-tree").parent().parent().children(".js-popup-close").click();
         setTimeout(function(){
           $("#form_success").click();
@@ -176,11 +165,6 @@ const sendForm = (() => {
     if (FORM !== null) {
       FORM.addEventListener('submit', function sub(ev) {
         ev.preventDefault();
-        // const values = validate.collectFormValues(this);
-        // const errors = validate(values, constraints);
-        // if (errors) {
-          // showErrors(this, errors || {});
-        // } else {
           const data = $(this).serialize();
           sendData(data);
         // }
