@@ -96,9 +96,9 @@ window.onload = function () {
       $('#stages').css('display', 'none');
     }
   });
-  $('#quizsubmit').on('click', function (e) {
-    e.preventDefault();
-    let json = convertFormToJSON('#Quiz');
-    console.log(json);
-  });
+  // $('#quizsubmit').on('click', function (e) {
+  //   e.preventDefault();
+  //   let json = convertFormToJSON('#Quiz');
+  //   console.log(json);
+  // });
 };
