@@ -33,8 +33,7 @@ window.onscroll = function () {
   }
 };
 
-
-// 
+//
 const plur_player = new Plyr('#player');
 const plur_player1 = new Plyr('#player1');
 const plur_player2 = new Plyr('#player2');
@@ -42,7 +41,7 @@ const plur_player3 = new Plyr('#player3');
 const plur_player4 = new Plyr('#player4');
 const playerOne = new Plyr('#playerOne');
 const playerTwo = new Plyr('#playerTwo');
-// 
+//
 
 $('#nav li').click(function (e) {
   $('#nav li').removeClass('active');
@@ -84,50 +83,41 @@ $('.open_full').on('click', function () {
   }
 });
 
-$(".quiz__wrap").on( 'scroll', function(){
-  if ($("#firstScreen").css('display')!= 'none')
-  {
-      if ($("#firstScreen").height() + $("#firstScreen").offset().top - $(".quiz__btn").offset().top-30<0){
-          $('.quiz__btn').addClass("blocked");
-      }
-      else{
-          $('.quiz__btn').removeClass("blocked");
-      }
+$('.quiz__wrap').on('scroll', function () {
+  if ($('#firstScreen').css('display') != 'none') {
+    if ($('#firstScreen').height() + $('#firstScreen').offset().top - $('.quiz__btn').offset().top - 30 < 0) {
+      $('.quiz__btn').addClass('blocked');
+    } else {
+      $('.quiz__btn').removeClass('blocked');
+    }
   }
-  if ($("#secondScreen").css('display')!= 'none')
-  {
-      if ($("#secondScreen").height() + $("#secondScreen").offset().top - $(".quiz__btn").offset().top-30<0){
-          $('.quiz__btn').addClass("blocked");
-      }
-      else{
-          $('.quiz__btn').removeClass("blocked");
-      }
+  if ($('#secondScreen').css('display') != 'none') {
+    if ($('#secondScreen').height() + $('#secondScreen').offset().top - $('.quiz__btn').offset().top - 30 < 0) {
+      $('.quiz__btn').addClass('blocked');
+    } else {
+      $('.quiz__btn').removeClass('blocked');
+    }
   }
-  if ($("#thirdScreen").css('display')!= 'none')
-  {
-      if ($("#thirdScreen").height() + $("#thirdScreen").offset().top - $(".quiz__btn").offset().top-30<0){
-          $('.quiz__btn').addClass("blocked");
-      }
-      else{
-          $('.quiz__btn').removeClass("blocked");
-      }
+  if ($('#thirdScreen').css('display') != 'none') {
+    if ($('#thirdScreen').height() + $('#thirdScreen').offset().top - $('.quiz__btn').offset().top - 30 < 0) {
+      $('.quiz__btn').addClass('blocked');
+    } else {
+      $('.quiz__btn').removeClass('blocked');
+    }
   }
-  if ($("#fourthScreen").css('display')!= 'none')
-  {
-      if ($("#fourthScreen").height() + $("#fourthScreen").offset().top - $(".quiz__btn").offset().top-30<0){
-          $('.quiz__btn').addClass("blocked");
-      }
-      else{
-          $('.quiz__btn').removeClass("blocked");
-      }
+  if ($('#fourthScreen').css('display') != 'none') {
+    if ($('#fourthScreen').height() + $('#fourthScreen').offset().top - $('.quiz__btn').offset().top - 30 < 0) {
+      $('.quiz__btn').addClass('blocked');
+    } else {
+      $('.quiz__btn').removeClass('blocked');
+    }
   }
-  if ($("#fifthScreen").css('display')!= 'none')
-  {
-      if ($("#fifthScreen").height() + $("#fifthScreen").offset().top - $(".quiz__btn").offset().top-30<0){
-          $('.quiz__btn').addClass("blocked");
-      }
-      else{
-          $('.quiz__btn').removeClass("blocked");
-      }
+  if ($('#fifthScreen').css('display') != 'none') {
+    if ($('#fifthScreen').height() + $('#fifthScreen').offset().top - $('.quiz__btn').offset().top - 30 < 0) {
+      $('.quiz__btn').addClass('blocked');
+    } else {
+      $('.quiz__btn').removeClass('blocked');
+    }
   }
 });
+
