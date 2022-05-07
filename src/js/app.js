@@ -121,3 +121,13 @@ $('.quiz__wrap').on('scroll', function () {
   }
 });
 
+$("#form__Three-popup_button").on("click",function(){
+  $(this).parent().parent().removeClass("active");
+  $(this).parent().parent().css("display","none");
+  $(this).parent().parent().css("opacity","0");
+});
+$("#form__Three-popup_button1").on("click",function(){
+  $(this).parent().parent().removeClass("active");
+  $(this).parent().parent().css("display","none");
+  $(this).parent().parent().css("opacity","0");
+});
