@@ -29,6 +29,7 @@ const constraints = {
 const FORM = document.getElementById('form-contact');
 const FORM1 = document.getElementById('form-contact2');
 const FORM2 = document.getElementById('Quiz');
+const FORM3 = document.getElementById('form-masterscall');
 const FORM_GROUP = 'form__group';
 const MESSAGE = '.form__error-text';
 
@@ -124,6 +125,21 @@ const sendForm = (() => {
       }
     });
   };
+  const sendData3 = (data) => {
+    $.ajax({
+      type: 'POST',
+      url: '../getMaster.php',
+      data, // serializes the form's elements.
+      dataType: 'json',
+      encode: true,
+    }).done((response) => {
+      // console.log(response)
+      if (response.success) {
+        popups.hidePopup();
+        popups.showPopup('success-popup');
+      }
+    });
+  };
 
   const validationForm = () => {
     if (FORM !== null) {
@@ -171,12 +187,28 @@ const sendForm = (() => {
       });
     }
   };
+  const validationForm3 = () => {
+    if (FORM3 !== null) {
+      FORM3.addEventListener('submit', function sub(ev) {
+        ev.preventDefault();
+        // const values = validate.collectFormValues(this);
+        // const errors = validate(values, constraints);
+        // if (errors) {
+          // showErrors(this, errors || {});
+        // } else {
+          const data = $(this).serialize();
+          sendData3(data);
+        // }
+      });
+    }
+  };
 
   const init = () => {
     if (document.getElementsByClassName('form').length > 0) {
       validationForm();
       validationForm1();
       validationForm2();
+      validationForm3();
     }
   };
 
