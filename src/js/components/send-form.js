@@ -31,6 +31,7 @@ const FORM1 = document.getElementById('form-contact2');
 const FORM2 = document.getElementById('Quiz');
 const FORM3 = document.getElementById('form-masterscall');
 const FORM4 = document.getElementById('form-contact-tree');
+const FORM5 = document.getElementById('form-contact-four');
 const FORM_GROUP = 'form__group';
 const MESSAGE = '.form__error-text';
 
@@ -90,9 +91,9 @@ const sendForm = (() => {
       encode: true,
     }).done((response) => {
       if (response) {
-        $("#form-contact").parent().parent().children(".js-popup-close").click();
-        setTimeout(function(){
-          $("#form_success").click();
+        $('#form-contact').parent().parent().children('.js-popup-close').click();
+        setTimeout(function () {
+          $('#form_success').click();
         }, 1000);
       }
     });
@@ -107,9 +108,9 @@ const sendForm = (() => {
     }).done((response) => {
       // console.log(response)
       if (response) {
-        $("#form-contact2").parent().parent().children(".js-popup-close").click();
-        setTimeout(function(){
-          $("#form_success").click();
+        $('#form-contact2').parent().parent().children('.js-popup-close').click();
+        setTimeout(function () {
+          $('#form_success').click();
         }, 1000);
       }
     });
@@ -123,9 +124,9 @@ const sendForm = (() => {
       encode: true,
     }).done((response) => {
       if (response) {
-        $("#Quiz").parent().parent().children(".js-popup-close").click();
-        setTimeout(function(){
-          $("#form_success").click();
+        $('#Quiz').parent().parent().children('.js-popup-close').click();
+        setTimeout(function () {
+          $('#form_success').click();
         }, 1000);
       }
     });
@@ -139,7 +140,7 @@ const sendForm = (() => {
       encode: true,
     }).done((response) => {
       if (response) {
-        $("#form_success").click();
+        $('#form_success').click();
       }
     });
   };
@@ -153,9 +154,26 @@ const sendForm = (() => {
       encode: true,
     }).done((response) => {
       if (response) {
-        $("#form-contact-tree").parent().parent().children(".js-popup-close").click();
-        setTimeout(function(){
-          $("#form_success").click();
+        $('#form-contact-tree').parent().parent().children('.js-popup-close').click();
+        setTimeout(function () {
+          $('#form_success').click();
+        }, 1000);
+      }
+    });
+  };
+
+  const sendData5 = (data) => {
+    $.ajax({
+      type: 'POST',
+      url: '../getExcursion1.php',
+      data, // serializes the form's elements.
+      dataType: 'json',
+      encode: true,
+    }).done((response) => {
+      if (response) {
+        $('#form-contact-four').parent().parent().children('.js-popup-close').click();
+        setTimeout(function () {
+          $('#form_success').click();
         }, 1000);
       }
     });
@@ -165,8 +183,8 @@ const sendForm = (() => {
     if (FORM !== null) {
       FORM.addEventListener('submit', function sub(ev) {
         ev.preventDefault();
-          const data = $(this).serialize();
-          sendData(data);
+        const data = $(this).serialize();
+        sendData(data);
         // }
       });
     }
@@ -179,10 +197,10 @@ const sendForm = (() => {
         // const values = validate.collectFormValues(this);
         // const errors = validate(values, constraints);
         // if (errors) {
-          // showErrors(this, errors || {});
+        // showErrors(this, errors || {});
         // } else {
-          const data = $(this).serialize();
-          sendData1(data);
+        const data = $(this).serialize();
+        sendData1(data);
         // }
       });
     }
@@ -194,10 +212,10 @@ const sendForm = (() => {
         // const values = validate.collectFormValues(this);
         // const errors = validate(values, constraints);
         // if (errors) {
-          // showErrors(this, errors || {});
+        // showErrors(this, errors || {});
         // } else {
-          const data = $(this).serialize();
-          sendData2(data);
+        const data = $(this).serialize();
+        sendData2(data);
         // }
       });
     }
@@ -209,10 +227,10 @@ const sendForm = (() => {
         // const values = validate.collectFormValues(this);
         // const errors = validate(values, constraints);
         // if (errors) {
-          // showErrors(this, errors || {});
+        // showErrors(this, errors || {});
         // } else {
-          const data = $(this).serialize();
-          sendData3(data);
+        const data = $(this).serialize();
+        sendData3(data);
         // }
       });
     }
@@ -224,10 +242,26 @@ const sendForm = (() => {
         // const values = validate.collectFormValues(this);
         // const errors = validate(values, constraints);
         // if (errors) {
-          // showErrors(this, errors || {});
+        // showErrors(this, errors || {});
         // } else {
-          const data = $(this).serialize();
-          sendData4(data);
+        const data = $(this).serialize();
+        sendData4(data);
+        // }
+      });
+    }
+  };
+
+  const validationForm5 = () => {
+    if (FORM5 !== null) {
+      FORM5.addEventListener('submit', function sub(ev) {
+        ev.preventDefault();
+        // const values = validate.collectFormValues(this);
+        // const errors = validate(values, constraints);
+        // if (errors) {
+        // showErrors(this, errors || {});
+        // } else {
+        const data = $(this).serialize();
+        sendData5(data);
         // }
       });
     }
@@ -240,6 +274,7 @@ const sendForm = (() => {
       validationForm2();
       validationForm3();
       validationForm4();
+      validationForm5();
     }
   };
 

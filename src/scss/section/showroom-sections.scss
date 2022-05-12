@@ -1,83 +1,88 @@
-.showroom-sections{
-    padding: 80px 0 100px;
+.showroom-sections {
+  padding: 80px 0 100px;
 }
-.showroom{
-    &__wrap{
-        background: #FA4A0C;
-        border-radius: 24px;
-        padding-bottom: 36px;
+.showroom {
+  &__wrap {
+    background: #fa4a0c;
+    border-radius: 24px;
+    padding-bottom: 36px;
+  }
+  &__video {
+    border-radius: 24px;
+    overflow: hidden;
+  }
+  .section-title {
+    padding-top: 4rem;
+    color: $white;
+    line-height: 1.375;
+    padding-bottom: 2.4rem;
+  }
+  &__text {
+    margin: 0 2.4rem;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 122%;
+    text-align: center;
+    color: $white;
+    border-bottom: 1px solid $white;
+    p {
+      padding-bottom: 30px;
+      &:last-child {
+        padding-bottom: 24px;
+      }
     }
-    &__video{
-        border-radius: 24px;
-        overflow: hidden;
+    .line {
+      border-top: 1px solid $white;
+      width: 160px;
+      margin: 0 auto;
     }
-    .section-title{
-        padding-top: 4rem;
-        color:$white;
-        line-height: 1.375;
-        padding-bottom: 2.4rem;
+  }
+  &__after-text {
+    padding: 3.2rem 2.4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media('>=phone-md') {
+      flex-direction: row;
     }
-    &__text{
-        margin: 0 2.4rem;
-        font-family: $primary-font;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.8rem;
-        line-height: 122%;
-        text-align: center;
-        color: $white;
-        border-bottom: 1px solid $white;
-        p{
-            padding-bottom: 30px;
-            &:last-child{
-                padding-bottom: 24px;
-            }
-        }
-        .line{
-            border-top: 1px solid $white;
-            width: 160px;
-            margin: 0 auto;
-        }
+    .logo__wrap {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex: 1;
+      @include media('<=phone-md') {
+        flex-direction: column;
+        margin-bottom: 7px;
+      }
     }
-    &__after-text{
-        padding-top: 3.2rem;
-        margin: 0 2.4rem;
-        display: flex;
-        flex-direction: row;
-        @include media("<=phone"){
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-        }
-        align-items: baseline;
-        .logo__wrap{
-            display: flex;
-            flex-direction: row;
-            align-items: baseline;
-            flex: 1;
-            @include media("<=phone"){
-                margin-bottom: 7px;
-            }
-        }
-        .logo{
-            a{
-                width: 85px;
-                height: 20px;
-            }
-        }
-        span{
-            font-family: $primary-font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1.2rem;
-            line-height: 133%;
-            display: flex;
-            align-items: center;
-            color: $white;
-        }
+    .logo {
+        margin-bottom: 1rem;
+      a {
+        width: 85px;
+        height: 20px;
+      }
+      @include media('>=phone-md') {
+        margin-bottom: 0;
+      }
     }
+    span {
+      font-family: $primary-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 133%;
+      display: flex;
+      align-items: center;
+      color: $white;
+      @include media('>=phone-md') {
+        margin-left: 0.8rem;
+      }
+    }
+  }
 }
-#player4{
-    max-height: 760px;
-    object-fit: cover;
+#player4 {
+  max-height: 760px;
+  object-fit: cover;
 }
