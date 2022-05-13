@@ -69,7 +69,6 @@ const swiperSlider = (() => {
       prevEl: '.swiper-video-button-prev',
     },
   });
-
   /////
 
   const withdrawableSwiper = new Swiper('.js-withdrawable-slider', {

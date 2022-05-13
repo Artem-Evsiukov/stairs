@@ -10,20 +10,10 @@
         position: relative;
         overflow-x: hidden;
         video{
-            width: 380px !important;
+            width: 100% !important;
             height: 671px !important;
             object-fit: cover;
             border-radius: 25px;
-            @include media("<=phone-lg"){
-                width: 88.786vw !important;
-                max-width: 380px !important;
-                height: 156.776vw !important;
-                max-height: 671px !important;
-            }
-            @include media("<=phone-md"){
-                width: 272px !important;
-                height: 481px !important;
-            }
         }
         .plyr--video{
             border-radius: 25px;

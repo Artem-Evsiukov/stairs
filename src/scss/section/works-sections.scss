@@ -145,10 +145,10 @@
         color: $black;
       }
     }
-  }
-  &:hover {
-    .submenu {
-      transform: scaleY(1);
+    &.active {
+      .submenu {
+        transform: scaleY(1);
+      }
     }
   }
 }
