@@ -99,6 +99,21 @@ const swiperSlider = (() => {
     //   prevEl: '.swiper-video-button-prev',
     // },
   });
+  const showroomSwiper = new Swiper('.js-showroom-slider', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    centerInsufficientSlides: true,
+    loop: true,
+    // pagination: {
+    //   el: '.swiper-reviews-pagination',
+    //   type: 'bullets',
+    //   clickable: true,
+    // },
+    navigation: {
+      nextEl: '.swiper-showroom-button-next',
+      prevEl: '.swiper-showroom-button-prev',
+    },
+  });
   const reviewsImagesSwiper = new Swiper('.js-reviews-images-slider', {
     slidesPerView: 2,
     spaceBetween: 20,

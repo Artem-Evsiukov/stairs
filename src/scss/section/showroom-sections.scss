@@ -10,12 +10,36 @@
   &__video {
     border-radius: 24px;
     overflow: hidden;
+    position: relative;
   }
   .section-title {
-    padding-top: 4rem;
+    padding-top: 8rem;
     color: $white;
     line-height: 1.375;
     padding-bottom: 2.4rem;
+  }
+  .section-button {
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin: 0 2.4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 79px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    span{
+      font-family: $primary-font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      display: flex;
+      align-items: center;
+      color: $youtube_text;
+      padding-right: 1.2rem;
+    }
   }
   &__text {
     margin: 0 2.4rem;
@@ -28,7 +52,7 @@
     color: $white;
     border-bottom: 1px solid $white;
     p {
-      padding-bottom: 30px;
+      padding-bottom: 2.3rem;
       &:last-child {
         padding-bottom: 24px;
       }
@@ -85,4 +109,42 @@
 #player4 {
   max-height: 760px;
   object-fit: cover;
+}
+.swiper-showroom-button-prev{
+  position: absolute;
+  height: 72px;
+  width: 72px;
+  background: rgba(51, 51, 51, 0.6);
+  border-radius: 36px;
+  top: 50%;
+  transform: translate(0%,-50%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  i{
+    color: #FFF;
+    font-size: 25px;
+  }
+}
+.swiper-showroom-button-next{
+  position: absolute;
+  height: 72px;
+  width: 72px;
+  background: rgba(51, 51, 51, 0.6);
+  border-radius: 36px;
+  top: 50%;
+  transform: translate(0%,-50%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  i{
+    color: #FFF;
+    font-size: 25px;
+  }
 }
