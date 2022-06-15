@@ -54,6 +54,21 @@ const swiperSlider = (() => {
     },
   });
 
+  const tabSwiperSix = new Swiper('.js-tab-sliderSix', {
+    slidesPerView: 1.5,
+    spaceBetween: 20,
+    speed: 1000,
+    autoplay: true,
+    centerInsufficientSlides: true,
+    observer: true,
+    observeParents: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+  });
+
   /////
 
   const videoSwiper = new Swiper('.js-video-slider', {

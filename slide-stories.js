@@ -68,14 +68,44 @@ new SlideStories('slideSeven');
 new SlideStories('slideEight');
 new SlideStories('slideNine');
 new SlideStories('slideTen');
-new SlideStories('slideGallery');
+
 new SlideStories('reviews-popup-1');
 new SlideStories('reviews-popup-2');
 new SlideStories('reviews-popup-3');
 new SlideStories('reviews-popup-4');
+
 new SlideStories('tabs-3');
 new SlideStories('tabs-4');
 new SlideStories('tabs-5');
 new SlideStories('tabs-6');
 new SlideStories('tabs-7');
-// new SlideStories('tabs-8');
+new SlideStories('tabs-8');
+
+new SlideStories('forging-3');
+new SlideStories('forging-4');
+new SlideStories('forging-5');
+new SlideStories('forging-6');
+new SlideStories('forging-7');
+
+
+new SlideStories('glass-3');
+new SlideStories('glass-4');
+new SlideStories('glass-5');
+new SlideStories('glass-6');
+new SlideStories('glass-7');
+
+new SlideStories('screw-3');
+new SlideStories('screw-4');
+
+new SlideStories('steel-2');
+new SlideStories('steel-3');
+
+new SlideStories('slideGallery');
+new SlideStories('slideGallery2');
+new SlideStories('slideGallery3');
+new SlideStories('slideGallery4');
+new SlideStories('slideGallery5');
+new SlideStories('slideGallery6');
+new SlideStories('slideGallery7');
+new SlideStories('slideGallery8');
+new SlideStories('slideGallery9');

@@ -80,6 +80,23 @@
   }
 }
 
+.js-tab-sliderSix {
+  position: relative;
+  overflow: hidden;
+  .swiper-slide {
+    height: auto;
+    border-radius: 2.4rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      min-height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
+
 //
 .swiper-video-button-prev {
   height: 85px;
