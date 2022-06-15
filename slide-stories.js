@@ -69,6 +69,7 @@ new SlideStories('slideEight');
 new SlideStories('slideNine');
 new SlideStories('slideTen');
 
+new SlideStories('reviews-popup');
 new SlideStories('reviews-popup-1');
 new SlideStories('reviews-popup-2');
 new SlideStories('reviews-popup-3');
@@ -86,7 +87,6 @@ new SlideStories('forging-4');
 new SlideStories('forging-5');
 new SlideStories('forging-6');
 new SlideStories('forging-7');
-
 
 new SlideStories('glass-3');
 new SlideStories('glass-4');

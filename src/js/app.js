@@ -145,3 +145,10 @@ $('#works__btn').click(function () {
     $(this).addClass('active');
   }
 });
+$('#works__btn2').click(function () {
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+    } else {
+      $(this).addClass('active');
+    }
+  });

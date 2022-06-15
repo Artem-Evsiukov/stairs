@@ -1,9 +1,10 @@
 .js-tab-slider {
   position: relative;
   overflow: hidden;
+  height: 420px;
   .swiper-slide {
+    min-height: 420px;
     width: 100%;
-    height: auto;
     border-radius: 2.4rem;
     overflow: hidden;
 
@@ -18,8 +19,9 @@
 .js-tab-sliderTwo {
   position: relative;
   overflow: hidden;
+  height: 420px;
   .swiper-slide {
-    height: auto;
+    min-height: 420px;
     border-radius: 2.4rem;
     overflow: hidden;
 
@@ -34,8 +36,9 @@
 .js-tab-sliderThree {
   position: relative;
   overflow: hidden;
+  height: 420px;
   .swiper-slide {
-    height: auto;
+    min-height: 420px;
     border-radius: 2.4rem;
     overflow: hidden;
 
@@ -50,8 +53,9 @@
 .js-tab-sliderFour {
   position: relative;
   overflow: hidden;
+  height: 420px;
   .swiper-slide {
-    height: auto;
+    min-height: 420px;
     border-radius: 2.4rem;
     overflow: hidden;
 
@@ -66,8 +70,9 @@
 .js-tab-sliderFive {
   position: relative;
   overflow: hidden;
+  height: 420px;
   .swiper-slide {
-    height: auto;
+    min-height: 420px;
     border-radius: 2.4rem;
     overflow: hidden;
 
@@ -83,8 +88,9 @@
 .js-tab-sliderSix {
   position: relative;
   overflow: hidden;
+  height: 420px;
   .swiper-slide {
-    height: auto;
+    min-height: 420px;
     border-radius: 2.4rem;
     overflow: hidden;
 
