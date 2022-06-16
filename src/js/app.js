@@ -146,9 +146,9 @@ $('#works__btn').click(function () {
   }
 });
 $('#works__btn2').click(function () {
-    if ($(this).hasClass('active')) {
-      $(this).removeClass('active');
-    } else {
-      $(this).addClass('active');
-    }
-  });
+  if ($(this).hasClass('active')) {
+    $(this).removeClass('active');
+  } else {
+    $(this).addClass('active');
+  }
+});
