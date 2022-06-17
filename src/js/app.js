@@ -6,6 +6,7 @@ import burgerMenu from './components/burger-menu';
 import tabs from './components/tabs';
 import swiperSlider from './components/slider';
 import popups from './components/popup';
+import popupsVideo from './components/popup-video';
 import Accordion from './components/accordion';
 import { inputmask } from './components/inputMask';
 import sendForm from './components/send-form';
@@ -18,6 +19,7 @@ import sendForm from './components/send-form';
     tabs.init();
     swiperSlider.init();
     popups.init();
+    popupsVideo.init();
     inputmask();
     sendForm.init();
   });
@@ -138,6 +140,12 @@ $('#form__Three-popup_button1').on('click', function () {
   $(this).parent().parent().css('opacity', '0');
 });
 
+$('#form__Three-popup_button2').on('click', function () {
+  $(this).parent().parent().removeClass('active');
+  $(this).parent().parent().css('display', 'none');
+  $(this).parent().parent().css('opacity', '0');
+});
+
 $('#works__btn').click(function () {
   if ($(this).hasClass('active')) {
     $(this).removeClass('active');
@@ -151,4 +159,40 @@ $('#works__btn2').click(function () {
   } else {
     $(this).addClass('active');
   }
+});
+
+$(function () {
+  $('.js-popup').each(function () {
+    $(this).on('click', function () {
+      var msrc = $(this).data('src');
+      $.when($('.popup--videoOne').find('video').attr('src', msrc), $('.popup--videoOne').fadeIn()).done(function () {
+        $('.popup--videoOne').find('video').get(0).play([0]);
+      });
+      return false;
+    });
+  });
+  $('.js-popup-close').on('click', function () {
+    $.when($('.popup--videoOne').fadeOut()).done(function () {
+      $('.popup--videoOne').find('video').attr('src', '');
+    });
+    return false;
+  });
+});
+
+$(function () {
+  $('.js-popup').each(function () {
+    $(this).on('click', function () {
+      var msrc = $(this).data('src');
+      $.when($('.popup--videoOne').find('video').attr('src', msrc), $('.popup--videoOne').fadeIn()).done(function () {
+        $('.popup--videoOne').find('video').get(0).play([0]);
+      });
+      return false;
+    });
+  });
+  $('#form__Three-popup_button').on('click', function () {
+    $.when($('.popup--videoOne').fadeOut()).done(function () {
+      $('.popup--videoOne').find('video').attr('src', '');
+    });
+    return false;
+  });
 });

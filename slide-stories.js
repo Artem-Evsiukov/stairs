@@ -81,6 +81,7 @@ new SlideStories('tabs-5');
 new SlideStories('tabs-6');
 new SlideStories('tabs-7');
 new SlideStories('tabs-8');
+new SlideStories('tabs-9');
 
 new SlideStories('forging-3');
 new SlideStories('forging-4');

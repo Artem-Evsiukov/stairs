@@ -1,4 +1,4 @@
-const POPUP_SHOW = document.querySelectorAll('.js-show-popup');
+const POPUP_SHOW = document.querySelectorAll('.js-popup');
 const POPUPS = document.querySelectorAll('[data-popup]');
 const OVERLAY = document.querySelector('.js-overlay');
 const BODY = document.querySelector('body');
@@ -7,7 +7,7 @@ const CLOSE_BTN = document.querySelectorAll('.js-popup-close');
 const CLASS_ACTIVE = 'active';
 const CLASS_OVERFLOW = 'overflow';
 
-const popups = (() => {
+const popupsVideo = (() => {
   if (!POPUPS.length) return;
 
   function fadeOut(el, changeOpasity = -0.8) {
@@ -51,18 +51,18 @@ const popups = (() => {
     POPUPS.forEach((popup) => fadeOut(popup));
   };
 
-  const showPopup = (target) => {
+  const showPopupVideo = (target) => {
     fadeIn(OVERLAY);
     BODY.classList.add(CLASS_OVERFLOW);
     const currentPopup = document.querySelector(`[data-popup="${target}"]`);
     fadeIn(currentPopup);
   };
 
-  const showPopupInit = () => {
+  const showPopupVideoInit = () => {
     if (POPUP_SHOW.length) {
       POPUP_SHOW.forEach((opener) => {
         opener.addEventListener('click', function () {
-          showPopup(this.dataset.trigger);
+          showPopupVideo(this.dataset.trigger);
         });
       });
     }
@@ -83,14 +83,14 @@ const popups = (() => {
 
   const init = () => {
     if (POPUPS.length) {
-      showPopupInit();
+      showPopupVideoInit();
     }
   };
 
   return {
     init,
-    showPopup,
+    showPopupVideo,
   };
 })();
 
-export default popups;
+export default popupsVideo;

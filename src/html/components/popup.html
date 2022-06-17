@@ -341,6 +341,49 @@
         </div>
     </div>
 </div>
+
+<div class="popup popup--slider" data-popup="tabs-9">
+    <button type="button" class="popup__close js-popup-close"></button>
+    <div class="popup__wrap">
+        <div data-slide="tabs-9" class=" slide tabs-9">
+            <div class="slide-items">
+                <picture>
+                    <source srcset="../assets/images/wood/9/1.webp">
+                    <img src="../assets/images/wood/9/1.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="../assets/images/wood/9/2.webp">
+                    <img src="../assets/images/wood/9/2.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="../assets/images/wood/9/3.webp">
+                    <img src="../assets/images/wood/9/3.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="../assets/images/wood/9/4.webp">
+                    <img src="../assets/images/wood/9/4.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="../assets/images/wood/9/5.webp">
+                    <img src="../assets/images/wood/9/5.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="../assets/images/wood/9/6.webp">
+                    <img src="../assets/images/wood/9/6.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="../assets/images/wood/9/7.webp">
+                    <img src="../assets/images/wood/9/7.jpg" alt="">
+                </picture>
+            </div>
+            <nav class="slide-nav">
+                <div class="slide-thumb"></div>
+                <button class="slide-prev">Prev</button>
+                <button class="slide-next">Next</button>
+            </nav>
+        </div>
+    </div>
+</div>
 <!-- Последний слайд Дерево попап-->
 
 <!-- Начало ковка попап-->
@@ -1281,10 +1324,8 @@
             <div class="form__wrap">
                 <div class="form__head">
                     <h2 class="section-title">Оставь контакт </h2>
-                    <p class="base-text color-base"> получишь ссылку</p>
-                    <p class="base-text color-base"> на свою лестницу</p>
-                    <iframe
-                        src="https://projekteprofi.sema-server.com/webviewer/index.html?model=98DA15F9-76C7-42A2-B6B6-D210DFC085E2#ru"></iframe>
+                    <p class="base-text color-base"> и получи скидку</p>
+                    <p class="base-text color-base"> на свою лестницу!</p>
                 </div>
                 <div class="form__body">
                     <div class="form__group">
@@ -1317,12 +1358,24 @@
                             </label>
                         </div>
                     </div>
-                    <span class="form__text">Удобней связь через мессенджер?</span>
+                    <span class="form__text">Выберите удобную для Вас связь!</span>
                     <button type="submit" class="btn primary" onclick="ym(89201492,'reachGoal','contact')">Получить
                         ссылку</button>
                 </div>
             </div>
         </form>
+    </div>
+</div>
+<div class="popup popup--video popup-videoTwo" data-popup="popup-iframe">
+    <button type="button" class="popup__close js-popup-close"></button>
+    <div class="popup__wrap">
+        <div class="popup__iframe">
+            <iframe
+                src="https://projekteprofi.sema-server.com/webviewer/index.html?model=98DA15F9-76C7-42A2-B6B6-D210DFC085E2#ru"></iframe>
+        </div>
+        <button class="btn primary js-show-popup" data-trigger="form__one-popup" id="form__Three-popup_button2"
+            onclick="ym(89201492,'reachGoal','contact')">
+            Получить ссылку</button>
     </div>
 </div>
 
@@ -1369,7 +1422,7 @@
                             </label>
                         </div>
                     </div>
-                    <span class="form__text">Удобней связь через мессенджер?</span>
+                    <span class="form__text">Выберите удобную для Вас связь!</span>
                     <button type="submit" class="btn primary" onclick="ym(89201492,'reachGoal','catalog')">Получить
                         каталог</button>
                 </div>
@@ -1420,7 +1473,7 @@
                             </label>
                         </div>
                     </div>
-                    <span class="form__text">Удобней связь через мессенджер?</span>
+                    <span class="form__text">Выберите удобную для Вас связь!</span>
                     <button type="submit" class="btn primary">Записаться на экскурсию</button>
                 </div>
             </div>
@@ -1468,7 +1521,7 @@
                             </label>
                         </div>
                     </div>
-                    <span class="form__text">Удобней связь через мессенджер?</span>
+                    <span class="form__text">Выберите удобную для Вас связь!</span>
                     <button type="submit" class="btn primary">Получить ссылку</button>
                 </div>
             </div>
@@ -1481,7 +1534,7 @@
     <div class="popup__wrap">
         <form class="form form--sent" id="form-contact-sent" method="POST">
             <div class="form__wrap">
-                <h2 class="section-title">Заявка успешно отправленна</h2>
+                <h2 class="section-title">Заявка успешно отправлена:</h2>
                 <div class="form__icon-sent">
                     @@include('../svg-icon/ok.html')
                 </div>
@@ -1962,12 +2015,13 @@
 </div>
 
 <!--Popup-video-->
-<div class="popup popup--video" data-popup="popup-video">
+<div class="popup popup--video popup--videoOne" data-popup="popup-video">
     <button type="button" class="popup__close js-popup-close"></button>
     <div class="popup__wrap">
-        <video preload="auto" id="playerOne" playsinline controls="">
+        <video src="" controls="" playsinline></video>
+        <!-- <video preload="auto" id="playerOne" playsinline controls="">
             <source src="../assets/video/vert.mp4" type="video/mp4" />
-        </video>
+        </video> -->
         <button class="btn primary js-show-popup" data-trigger="form__Three-popup" id="form__Three-popup_button"
             onclick="ym(89201492,'reachGoal','contact')">
             Записаться на экскурсию</button>

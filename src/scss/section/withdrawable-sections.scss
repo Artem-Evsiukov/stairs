@@ -14,7 +14,7 @@
     .swiper-slide {
       display: flex;
       justify-content: center;
-      height: 380px;
+      height: 460px;
       border-radius: 24px;
       overflow: hidden;
 
@@ -22,7 +22,7 @@
         width: 100%;
         display: block;
         height: 100%;
-        object-fit: cover;
+        
       }
       picture {
         width: 100% !important;

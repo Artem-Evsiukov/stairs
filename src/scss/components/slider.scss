@@ -187,12 +187,17 @@
 }
 .js-reviews-slider {
   .swiper-slide {
+    // padding: 0 0 40px;
     .swiper-slide__wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       padding: 40px 24px;
       background: #ffffff;
       box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
       border-radius: 24px;
       overflow: hidden;
+      min-height: 460px;
     }
   }
 }

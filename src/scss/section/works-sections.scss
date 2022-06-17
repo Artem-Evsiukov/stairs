@@ -13,12 +13,8 @@
     grid-template-rows: auto auto auto;
   }
   &__img {
-    width: 28.1vw;
-    height: 28.1vw;
-    @include media('<=phone-md') {
-      width: 27.1vw;
-      height: 27.1vw;
-    }
+    width: 30vw;
+    height: 48vw;
     @include media('>tablet') {
       width: 100%;
       height: auto;
