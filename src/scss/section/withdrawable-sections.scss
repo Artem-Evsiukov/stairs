@@ -22,7 +22,6 @@
         width: 100%;
         display: block;
         height: 100%;
-        
       }
       picture {
         width: 100% !important;
@@ -38,6 +37,13 @@
     @include media('<=phone-md') {
       font-size: 1.5rem;
       padding: 0;
+    }
+  }
+}
+.swiper-slide:nth-of-type(2) {
+  picture {
+    img {
+      object-fit: cover;
     }
   }
 }
